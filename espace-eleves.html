@@ -18,8 +18,14 @@
             window.location.href = 'login.html';    
         }
     });
-    window.addEventListener('beforeunload', function () {
-    localStorage.setItem('auth', 'false');
+
+    document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') {
+            // Check if the user is navigating away from the page
+            if (performance.navigation.type !== performance.navigation.TYPE_RELOAD) {
+                localStorage.setItem('auth', 'false');
+            }
+        }
     });
 </script> </head>
   <body>
