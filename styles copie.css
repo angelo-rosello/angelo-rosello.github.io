@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* Réinitialisation et styles de base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* On force l'affichage de la barre de scroll */
+html {
+    overflow-y: scroll;
+} 
+
+header {
+    background: #2C3E50;
+    color: #fff;
+    padding: 0.5rem 0; /* Réduit le padding vertical de l'en-tête */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px; /* Augmenter l'espace entre les liens du header */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8FB9A8; /* Couleur vert pastel */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav ul li a:hover {
+    color: #8FB9A8; /* Couleur vert pastel */
+}
+
+nav ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Liens dans le corps de texte */
+a {
+    color: #0066cc; /* Couleur bleue pour les liens */
+    text-decoration: none; /* Retirer la sous-ligne */
+    position: relative;
+    transition: color 0.3s;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #8FB9A8; /* Couleur vert pastel pour le balayage */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+a:hover {
+    color: #8FB9A8; /* Couleur vert pastel pour le survol */
+}
+
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+main {
+    padding: 20px; /* Réduit le padding global de la section principale */
+    max-width: 800px;
+    margin: 10px auto; /* Réduit la marge autour de la section principale */
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2C3E50;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #2C3E50;
+    margin-bottom: -10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px; /* Augmenter le padding vertical pour compenser la réduction de hauteur */
+    background: #2C3E50;
+    color: #fff;
+}
+
+.contact-info {
+    font-style: none; /* Texte en italique */
+    font-size: 0.8rem; /* Taille de texte plus petite */
+    margin-top: 0px; /* Marge top pour espacer du texte précédent */
+    margin-left: 50px; /* Décalage vers la droite */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espace entre l'image et le texte */
+}
+
+.shadow-img {
+    max-width: 350px; /* Taille maximale de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

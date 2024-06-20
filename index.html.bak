@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelo Rosello — Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="favicon">
+    <script src="fadeTransition.js" defer="defer"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cv_rosello.pdf" target="_blank">[ CV ]</a></li>
+          <li><a href="maths.html">Un peu de maths</a></li>
+          <li><a href="login.html">Espace élèves</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="fade-in">
+      <section id="accueil">
+        <h1>Page personnelle d'Angelo Rosello</h1>
+        <div class="intro"> <img src="mypic.jpg" class="shadow-img" alt="Ma photo">
+          <div class="description">
+            <p><img src="welcome.png" alt="bienvenue" title="bienvenue" class="animate-zoomIn-slow"
+                style="width: 114px; height: 38px;">
+              <br>
+              J'ai effectué ma thèse à l'ENS Rennes entre 2017 et 2020. Celle-ci
+              s'intitule <strong>"Limites d'échelles pour des modèles
+                cinétiques stochastiques"</strong> (<a href="https://tel.archives-ouvertes.fr/tel-02903157v1"
+                target="_blank">disponible
+                ici</a>).</p>
+            <p>Depuis Septembre 2021, j'enseigne en classe préparatoire au Lycée
+              Montaigne (Paris 6). Vous trouverez ici :</p>
+            <ul>
+              <li>Mon CV</li>
+              <li>Diverses productions liées à mes activités mathématiques
+                (publications, pré-publications, jolis problèmes et autres
+                joyeuseries)</li>
+              <li>Un espace réservé aux étudiants où je déposerai cours,
+                exercices et corrigés au fil de l'année.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="contact-info">Contact : ang [dot] rosello [at] gmail.com</p>
+      </section>
+    </main>
+  </body>
+</html>

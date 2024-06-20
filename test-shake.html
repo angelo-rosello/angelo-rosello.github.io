@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Animation Shake</title>
+    <style>
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+        }
+
+        .shake {
+            animation: shake 0.5s;
+        }
+
+        .guard-image {
+            width: 67px;
+            height: 65px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="guard.png" alt="guard" title="guard" class="guard-image" id="guard-image">
+        <br>
+        <button onclick="shakeImage()">Tester le tremblement</button>
+    </div>
+
+    <script>
+        function shakeImage() {
+            const guardImage = document.getElementById('guard-image');
+            guardImage.classList.add('shake');
+
+            // Retirer la classe shake après l'animation pour pouvoir la réutiliser
+            setTimeout(() => {
+                guardImage.classList.remove('shake');
+            }, 500);
+        }
+    </script>
+</body>
+</html>

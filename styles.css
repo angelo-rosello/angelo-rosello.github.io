@@ -1,0 +1,296 @@
+/* styles.css */
+
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Réinitialisation et styles de base */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* On force l'affichage de la barre de scroll */
+html {
+    overflow-y: scroll;
+}
+
+/* En-tête et navigation */
+header {
+    background: #2C3E50;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8FB9A8;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav ul li a:hover {
+    color: #8FB9A8;
+}
+
+nav ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Liens dans le corps de texte */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #8FB9A8;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+a:hover {
+    color: #8FB9A8;
+}
+
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Section principale */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 10px auto;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1, h2 {
+    color: #2C3E50;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #2C3E50;
+    margin-bottom: -10px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #2C3E50;
+    color: #fff;
+}
+
+/* Style du texte "contact" */
+.contact-info {
+    font-style: none;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+/* Style de la page d'accueil (image et texte) */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+/* Image avec ombre */
+.shadow-img {
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Styles pour les entrées de texte et les boutons */
+
+/* Styles pour les inputs */
+input[type="password"], input[type="text"], input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 200px; /* Largeur de l'input */
+    box-sizing: border-box; /* Inclure le padding dans la largeur */
+    transition: border-color 0.3s;
+}
+
+input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #2C3E50; /* Couleur de la bordure au focus */
+}
+
+/* Styles pour les boutons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #2C3E50; /* Même couleur que le header */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8FB9A8; /* Couleur vert pastel */
+}
+
+
+/* Animation fade-in */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Animation de fade-out */
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* Animation zoom-in */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-zoomIn {
+    opacity: 0;
+    animation: zoomIn 1s forwards;
+    animation-delay: 0.3s;
+}
+
+.animate-zoomIn-slow {
+    opacity: 0;
+    animation: zoomIn 1s forwards;
+    animation-delay: 0.8s;
+}
+
+/* Animation shake */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+/* Style pour l'image du garde */
+.guard-image {
+    width: 67px;
+    height: 65px;
+    display: inline-block; /* Assure que l'élément est visible */
+}
+
+
+/* Styles réactifs pour mobile */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shadow-img {
+	max-height: 70%
+        max-width: 70%;
+	margin-top: 10px;
+        margin-bottom: -20px;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-left: 0;
+    }
+}

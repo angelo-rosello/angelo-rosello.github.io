@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelo Rosello — Un peu de maths</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="favicon">
+    <script src="fadeTransition.js" defer="defer"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cv_rosello.pdf" target="_blank">[ CV ]</a></li>
+          <li><a href="maths.html">Un peu de maths</a></li>
+          <li><a href="login.html">Espace élèves</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="fade-in">
+      <section id="recherche">
+        <h1>Travaux de recherche</h1>
+        <p> <em>- Existence of martingale solutions for stochastic flocking
+            models with local alignment</em> (July 2020) : <a href="https://arxiv.org/abs/2007.01512"
+            target="_blank">arXiv</a>,
+          <a href="https://hal.archives-ouvertes.fr/hal-02888169" target="_blank">HAL</a><br>
+          <em>- Weak and strong mean-field limits for stochastic Cucker-Smale
+            particle systems</em> (May 2019) : <a href="https://arxiv.org/abs/1905.02499"
+            target="_blank">arXiv</a>,
+          <a href="https://hal.archives-ouvertes.fr/hal-02120106" target="_blank">HAL</a><br>
+          <em>- Diffusion-approximation for a kinetic spray-like system with
+            random forcing</em> : <a href="https://www.aimsciences.org/article/doi/10.3934/dcdss.2021039"
+            target="_blank">publication</a>,
+          (<a href="https://arxiv.org/abs/2005.09374" target="_blank">arXiv</a>,
+          <a href="https://hal.archives-ouvertes.fr/hal-02612572" target="_blank">HAL</a>)<br>
+          <em>- Re-arranged Dirichlet distributions and the emergence of a
+            logarithmic Zipf's law</em> (February 2021) : <a href="https://hal.science/hal-03838796/"
+            target="_blank">HAL</a>
+        </p>
+      </section>
+      <section id="autre">
+        <h1>Documents divers et jolis problèmes</h1>
+        <p> - Petit guide introductif aux limites de champ moyen 📖 <a href="doc-maths/champ_moyen.pdf"
+            target="_blank">PDF</a><br>
+          - Preuve élémentaire du Théorème Central Limite pour des lois de
+          Bernoulli 📖 <a href="doc-maths/TCL_elementaire.pdf" target="_blank">PDF</a><br>
+          - L'intuition derrière le changement de variable 📖 <a href="doc-maths/changement_variable.pdf"
+            target="_blank">PDF</a><br>
+          - Une approche vulgarisée du problème de Bâle 📖 <a href="doc-maths/bale.pdf"
+            target="_blank">PDF</a><br>
+          - Un vieil exposé rigolo sur un toy-model de Tennis 📖 <a href="doc-maths/tennis.pdf"
+            target="_blank">PDF</a><br>
+          - Un joli code Matlab illustrant l'algorithme de Metropolis-Hastings
+          avec des images 💾 <a href="doc-maths/metropolis_picture.zip" target="_blank">ZIP</a><br>
+          - Théorème de Heine pour les groupes topologiques 📖 <a href="doc-maths/heine_groupe.pdf"
+            target="_blank">PDF</a><br>
+          - Un petit jeu illustrant un modèle de traffic routier 🚗 <a href="https://mathemelo.itch.io/traffic-jam-simulator-2023"
+            target="_blank">JEU
+            (itch.io)</a><br>
+        </p>
+      </section>
+      <section id="videos">
+        <h1>Vidéos [▸]</h1>
+        <p>Vulgarisation sur Youtube : <a href="https://www.youtube.com/playlist?list=PLcva4XsPyTJDfUgaBPTBZ-N9eT91wCGU-"
+            target="_blank">@mathemelo</a></p>
+        <p style="text-align: center;"> <img src="thumbnail.png" class="shadow-img"
+            alt=""
+            style="width: 371px; height: 208px;">
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
