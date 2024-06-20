@@ -1,4 +1,4 @@
-// Tableau des chapitres avec leur numéro, nom, visibilité
+// Tableau des chapitres avec leur numero, nom, visibilite
 
 const chapitres = [
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: false },
@@ -38,13 +38,13 @@ const chapitres = [
 
 
 
-// Fonction pour générer les éléments HTML pour chaque chapitre
+// Fonction pour generer les elements HTML pour chaque chapitre
 function genererChapitres() {
     const ul = document.querySelector('.chapitres ul');
     
     chapitres.forEach(chapitre => {
-        console.log('Chapitre!');
         if (chapitre.visible) {
+            console.log('Chapitre : ' + chapitre.numero);
             const li = document.createElement('li');
             li.setAttribute('data-visible', 'true');
             li.setAttribute('data-folder', `chapitre${chapitre.numero}`); // Utilisation du numéro de chapitre
