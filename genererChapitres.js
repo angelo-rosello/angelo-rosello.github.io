@@ -43,7 +43,8 @@ function genererChapitres() {
     const ul = document.querySelector('.chapitres ul');
     
     chapitres.forEach(chapitre => {
-        if (true) {
+        console.log('Chapitre!');
+        if (chapitre.visible) {
             const li = document.createElement('li');
             li.setAttribute('data-visible', 'true');
             li.setAttribute('data-folder', `chapitre${chapitre.numero}`); // Utilisation du numéro de chapitre
