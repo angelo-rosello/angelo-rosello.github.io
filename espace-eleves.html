@@ -14,17 +14,24 @@
     <script defer="defer">
     document.addEventListener('DOMContentLoaded', function () {
         const auth = localStorage.getItem('auth');
-        if (auth !== 'true') {
-            window.location.href = 'login.html';    
+        const isReloading = sessionStorage.getItem('isReloading');
+
+        // Si l'utilisateur n'est pas authentifié et que la page n'est pas rechargée, rediriger vers login.html
+        if (auth !== 'true' && isReloading !== 'true') {
+            window.location.href = 'login.html';
         }
+
+        // Remettre l'état de rechargement à false après le chargement de la page
+        sessionStorage.setItem('isReloading', 'false');
     });
 
-    document.addEventListener('visibilitychange', function () {
-        if (document.visibilityState === 'hidden') {
-            // Check if the user is navigating away from the page
-            if (performance.navigation.type !== performance.navigation.TYPE_RELOAD) {
-                localStorage.setItem('auth', 'false');
-            }
+    window.addEventListener('beforeunload', function (event) {
+        // Indiquer que la page est en cours de rechargement
+        sessionStorage.setItem('isReloading', 'true');
+
+        // Si ce n'est pas un rafraîchissement, remettre auth à false
+        if (performance.navigation.type !== performance.navigation.TYPE_RELOAD) {
+            localStorage.setItem('auth', 'false');
         }
     });
 </script> </head>
@@ -41,7 +48,7 @@
     </header>
     <main class="fade-in">
       <h2 style="text-align: justify;">Mathématiques approfondies - Lycée
-        Montaigne - 2024/2025 (TEST)</h2>
+        Montaigne - 2024/2025 (TESTT)</h2>
       <section class="chapitres">
         <h3>Cours / Exercices</h3>
         <h2></h2>
