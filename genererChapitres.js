@@ -1,7 +1,7 @@
-// Tableau des chapitres avec leur numéro, nom, visibilité
+// Tableau des chapitres avec leur numÃ©ro, nom, visibilitÃ©
 
 const chapitres = [
-    { numero: 1, nom: "Logique, symbole, raisonnement", visible: false },
+    { numero: 1, nom: "Logique, symbole, raisonnement", visible: true },
     { numero: 2, nom: "Somme et produits", visible: false },
     { numero: 3, nom: "Applications", visible: false },
     { numero: 4, nom: "R&eacuteels, fonctions num&eacuteriques", visible: false },
@@ -38,7 +38,7 @@ const chapitres = [
 
 
 
-// Fonction pour générer les éléments HTML pour chaque chapitre
+// Fonction pour gÃ©nÃ©rer les Ã©lÃ©ments HTML pour chaque chapitre
 function genererChapitres() {
     const ul = document.querySelector('.chapitres ul');
     
@@ -46,7 +46,7 @@ function genererChapitres() {
         if (chapitre.visible) {
             const li = document.createElement('li');
             li.setAttribute('data-visible', 'true');
-            li.setAttribute('data-folder', `chapitre${chapitre.numero}`); // Utilisation du numéro de chapitre
+            li.setAttribute('data-folder', `chapitre${chapitre.numero}`); // Utilisation du numÃ©ro de chapitre
             
             const innerHTML = `
                 Chapitre ${chapitre.numero} (${chapitre.nom}) :
@@ -61,7 +61,7 @@ function genererChapitres() {
     });
 }
 
-// Appeler la fonction pour générer les chapitres au chargement du document
+// Appeler la fonction pour gÃ©nÃ©rer les chapitres au chargement du document
 document.addEventListener("DOMContentLoaded", function() {
     genererChapitres();
 });
