@@ -1,7 +1,7 @@
 // Tableau des chapitres avec leur numero, nom, visibilite
 
 const chapitres = [
-    { numero: 1, nom: "Logique, symbole, raisonnement", visible: false },
+    { numero: 1, nom: "Logique, symbole, raisonnement", visible: true },
     { numero: 2, nom: "Somme et produits", visible: false },
     { numero: 3, nom: "Applications", visible: false },
     { numero: 4, nom: "R&eacuteels, fonctions num&eacuteriques", visible: false },
