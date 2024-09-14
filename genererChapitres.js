@@ -2,7 +2,7 @@
 
 const chapitres = [
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true },
-    { numero: 2, nom: "Somme et produits", visible: false },
+    { numero: 2, nom: "Somme et produits", visible: true },
     { numero: 3, nom: "Applications", visible: false },
     { numero: 4, nom: "R&eacuteels, fonctions num&eacuteriques", visible: false },
     { numero: 5, nom: "Suites r&eacuteelles", visible: false },
