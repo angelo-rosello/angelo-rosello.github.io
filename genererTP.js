@@ -1,7 +1,7 @@
-// Tableau des chapitres avec leur numéro, nom, visibilité
+// Tableau des chapitres avec leur numÃ©ro, nom, visibilitÃ©
 
 const tps = [
-    { numero: 1, nom: "D&eacutecouverte de Python", visible: false },
+    { numero: 1, nom: "D&eacutecouverte de Python", visible: true },
     
     
     // Ajouter d'autres chapitres ici...
@@ -9,7 +9,7 @@ const tps = [
 
 
 
-// Fonction pour générer les éléments HTML pour chaque chapitre
+// Fonction pour gÃ©nÃ©rer les Ã©lÃ©ments HTML pour chaque chapitre
 function genererTP() {
     const ul = document.querySelector('.tps ul');
     
@@ -30,7 +30,7 @@ function genererTP() {
     });
 }
 
-// Appeler la fonction pour générer les chapitres au chargement du document
+// Appeler la fonction pour gÃ©nÃ©rer les chapitres au chargement du document
 document.addEventListener("DOMContentLoaded", function() {
     genererTP();
 });
