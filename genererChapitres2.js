@@ -10,7 +10,7 @@ function checkFileExists(url, callback) {
 // Fonction pour générer les liens des chapitres
 function genererLiensChapitre(chapitreNumero) {
     const ul = document.querySelector('.chapitres ul');
-    const basePath = `https://angelo-rosello.github.io/doc-eleves/chapitre${chapitreNumero}/`;
+    const basePath = `http://www.angelorosello.fr/doc-eleves/chapitre${chapitreNumero}/`;
 
     // Objets pour les noms de fichiers et les noms des liens
     const files = [
