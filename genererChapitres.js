@@ -1,7 +1,7 @@
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherCorrige: true },
-    { numero: 2, nom: "Somme et produits", visible: true, afficherCorrige: false },
+    { numero: 2, nom: "Somme et produits", visible: true, afficherCorrige: true },
     { numero: 3, nom: "Applications", visible: false, afficherCorrige: false },
     { numero: 4, nom: "R&eacuteels, fonctions num&eacuteriques", visible: false, afficherCorrige: false },
     { numero: 5, nom: "Suites r&eacuteelles", visible: false, afficherCorrige: false },
