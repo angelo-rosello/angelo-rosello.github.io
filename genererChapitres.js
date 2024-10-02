@@ -3,7 +3,7 @@ const chapitres = [
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherCorrige: true },
     { numero: 2, nom: "Somme et produits", visible: true, afficherCorrige: true },
     { numero: 3, nom: "Applications", visible: true , afficherCorrige:  true },
-    { numero: 4, nom: "R&eacuteels, fonctions num&eacuteriques", visible: false, afficherCorrige: false },
+    { numero: 4, nom: "R&eacuteels, fonctions num&eacuteriques", visible: true, afficherCorrige: false },
     { numero: 5, nom: "Suites r&eacuteelles", visible: false, afficherCorrige: false },
     { numero: 6, nom: "Polyn&ocircmes", visible: false, afficherCorrige: false },
     { numero: 7, nom: "Limites de suites", visible: false, afficherCorrige: false },
