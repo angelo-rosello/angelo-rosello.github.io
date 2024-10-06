@@ -4,7 +4,7 @@ const tps = [
     { numero: 1, nom: "D&eacutecouverte de Python", visible: true },
     { numero: 2, nom : "numpy et fonctions", visible: true },
     { numero: 3, nom : "Listes, boucles for", visible: true },
-    { numero: 4, nom : "Boucles for : sommes et produits", visible: true }
+    { numero: 4, nom : "Boucle for : sommes et produits", visible: true }
     
     
     // Ajouter d'autres chapitres ici...
