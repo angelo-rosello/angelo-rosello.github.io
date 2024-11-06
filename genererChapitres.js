@@ -6,7 +6,7 @@ const chapitres = [
     { numero: 4, nom: "R&eacuteels, fonctions num&eacuteriques", visible: true, afficherCorrige: true },
     { numero: 5, nom: "Suites r&eacuteelles", visible: true, afficherCorrige: true },
     { numero: 6, nom: "Polyn&ocircmes", visible: true, afficherCorrige: true },
-    { numero: 7, nom: "Limites de suites", visible: true, afficherCorrige: false },
+    { numero: 7, nom: "Limites de suites", visible: true, afficherCorrige: true },
     { numero: 8, nom: "D&eacutenombrement", visible: true, afficherCorrige: false },
     { numero: 9, nom: "Limites de fonctions", visible: false, afficherCorrige: false },
     { numero: 10, nom: "Continuit&eacute", visible: false, afficherCorrige: false },
