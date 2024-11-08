@@ -6,7 +6,8 @@ const tps = [
     { numero: 3, nom : "Listes, boucles for", visible: true },
     { numero: 4, nom : "Boucle for : sommes et produits", visible: true },
     { numero: 5, nom : "Etude de suites réelles - part. 1", visible: true },
-    { numero: 6, nom : "Etude de suites réelles - part. 2", visible: true }
+    { numero: 6, nom : "Etude de suites réelles - part. 2", visible: true },
+    { numero: 7, nom : "Structures conditionnelles", visible: true }
     
     
     // Ajouter d'autres chapitres ici...
