@@ -9,7 +9,7 @@ const chapitres = [
     { numero: 7, nom: "Limites de suites", visible: true, afficherCorrige: true },
     { numero: 8, nom: "D&eacutenombrement", visible: true, afficherCorrige: true },
     { numero: 9, nom: "Limites de fonctions", visible: true, afficherCorrige: true },
-    { numero: 10, nom: "Continuit&eacute", visible: true, afficherCorrige: false },
+    { numero: 10, nom: "Continuit&eacute", visible: true, afficherCorrige: true },
     { numero: 11, nom: "Espaces probabilis&eacutes finis", visible: false, afficherCorrige: false },
     { numero: 12, nom: "Syst&egravemes lin&eacuteaires", visible: false, afficherCorrige: false },
     { numero: 13, nom: "D&eacuterivation", visible: false, afficherCorrige: false },
