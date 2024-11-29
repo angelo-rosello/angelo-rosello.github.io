@@ -9,7 +9,8 @@ const tps = [
     { numero: 6, nom : "Etude de suites réelles - part. 2", visible: true },
     { numero: 7, nom : "Structures conditionnelles", visible: true },
     { numero: 8, nom : "Boucle While", visible: true },
-    { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: true }
+    { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: true },
+    { numero: 10, nom : "Vecteurs (Partie I)", visible: true }
     
     
     // Ajouter d'autres chapitres ici...
