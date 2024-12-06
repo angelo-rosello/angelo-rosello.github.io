@@ -10,7 +10,9 @@ const tps = [
     { numero: 7, nom : "Structures conditionnelles", visible: true },
     { numero: 8, nom : "Boucle While", visible: true },
     { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: true },
-    { numero: 10, nom : "Vecteurs (Partie I)", visible: true }
+    { numero: 10, nom : "Vecteurs (Partie I)", visible: true },
+    { numero: 11, nom : "Vecteurs (Partie II)", visible: true },
+    { numero: 101, nom : "Révisions 1 (corrigé)", visible: true },
     
     
     // Ajouter d'autres chapitres ici...
