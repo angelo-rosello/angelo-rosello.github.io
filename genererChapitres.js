@@ -12,7 +12,7 @@ const chapitres = [
     { numero: 10, nom: "Continuit&eacute", visible: true, afficherCorrige: true },
     { numero: 11, nom: "Espaces probabilis&eacutes finis", visible: true, afficherCorrige: true },
     { numero: 12, nom: "Syst&egravemes lin&eacuteaires", visible: true, afficherCorrige: true },
-    { numero: 13, nom: "D&eacuterivation", visible: true, afficherCorrige: false },
+    { numero: 13, nom: "D&eacuterivation", visible: true, afficherCorrige: true },
     { numero: 14, nom: "Matrices", visible: false, afficherCorrige: false },
     { numero: 15, nom: "Variables al&eacuteatoires finies", visible: false, afficherCorrige: false },
     { numero: 16, nom: "Int&eacutegration sur un segment", visible: false, afficherCorrige: false },
