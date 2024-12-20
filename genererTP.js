@@ -13,6 +13,8 @@ const tps = [
     { numero: 10, nom : "Vecteurs - Partie I)", visible: true },
     { numero: 11, nom : "Vecteurs - Partie II)", visible: true },
     { numero: "révisions1",  nom : "Corrigé", visible: true },
+    { numero: 12, nom : "Matrices - Partie I)", visible: true },
+    { numero: 13, nom : "Matrices - Partie II)", visible: true },
     
     
     // Ajouter d'autres chapitres ici...
