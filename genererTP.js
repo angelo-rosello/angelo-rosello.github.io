@@ -1,7 +1,7 @@
 // Tableau des chapitres avec leur numéro, nom, visibilité
 
 const tps = [
-    { numero: 1, nom: "D&eacutecouverte de Python", visible: true },
+    { numero: 1, nom: "D&eacutecouverte de Python ", visible: true },
     { numero: 2, nom : "numpy et fonctions", visible: true },
     { numero: 3, nom : "Listes, boucles for", visible: true },
     { numero: 4, nom : "Boucle for : sommes et produits", visible: true },
