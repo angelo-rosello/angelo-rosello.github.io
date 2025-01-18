@@ -46,7 +46,8 @@ function genererChapitres() {
             
             let innerHTML = `
                 Chapitre ${chapitre.numero} (${chapitre.nom}) :
-                <a href="cours.pdf" class="file-link" target="_blank">Cours</a> |
+                <a href="vierge.pdf" class="file-link" target="_blank">Poly vierge</a> |
+                <a href="cours.pdf" class="file-link" target="_blank">Cours complet</a> |
                 <a href="exercices.pdf" class="file-link" target="_blank">Exercices</a>
             `;
             
