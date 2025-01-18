@@ -14,7 +14,7 @@ const chapitres = [
     { numero: 12, nom: "Syst&egravemes lin&eacuteaires", visible: true, afficherCorrige: true },
     { numero: 13, nom: "D&eacuterivation", visible: true, afficherCorrige: true },
     { numero: 14, nom: "Matrices", visible: true, afficherCorrige: true },
-    { numero: 15, nom: "Variables al&eacuteatoires finies", visible: false, afficherCorrige: false },
+    { numero: 15, nom: "Variables al&eacuteatoires finies", visible: true, afficherCorrige: false },
     { numero: 16, nom: "Int&eacutegration sur un segment", visible: false, afficherCorrige: false },
     { numero: 17, nom: "Espaces vectoriels", visible: false, afficherCorrige: false },
     { numero: 18, nom: "Equivalence et n&eacutegligeabilit&eacute", visible: false, afficherCorrige: false },
