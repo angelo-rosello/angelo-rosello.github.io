@@ -1,5 +1,5 @@
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
-const chapitres = [
+const chapitres = [  
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherComplet : true, afficherCorrige: true },
     { numero: 2, nom: "Somme et produits", visible: true, afficherCorrige: true },
     { numero: 3, nom: "Applications", visible: true , afficherComplet : true, afficherCorrige:  true },
