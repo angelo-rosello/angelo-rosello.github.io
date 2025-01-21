@@ -13,7 +13,7 @@ const chapitres = [
     { numero: 11, nom: "Espaces probabilis&eacutes finis", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 12, nom: "Syst&egravemes lin&eacuteaires", visible: true,  afficherComplet : true, afficherCorrige: true },
     { numero: 13, nom: "D&eacuterivation", visible: true,  afficherComplet : true, afficherCorrige: true },
-    { numero: 14, nom: "Matrices", visible: true, afficherComplet : true, fficherCorrige: true },
+    { numero: 14, nom: "Matrices", visible: true, afficherComplet : true, afficherCorrige: true },
     { numero: 15, nom: "Variables al&eacuteatoires finies", visible: true, afficherComplet : true,  afficherCorrige: false },
     { numero: 16, nom: "Int&eacutegration sur un segment", visible: true, afficherComplet : false,  afficherCorrige: false },
     { numero: 17, nom: "Espaces vectoriels", visible: false, afficherCorrige: false },
