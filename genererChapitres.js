@@ -22,7 +22,7 @@ const chapitres = [
     { numero: 20, nom: "S&eacuteries", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 21, nom: "Espaces probabilis&eacutes g&eacuten&eacuteraux", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 22, nom: "Espaces vectoriels de dimension finie", visible: false, afficherComplet : false,  afficherCorrige: false },
-    { numero: 23, nom: "Variables al&eacuteatoies discr&egravetes", visible: false, afficherComplet : false,  afficherCorrige: false },
+    { numero: 23, nom: "Variables al&eacuteatoires discr&egravetes", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 24, nom: "Somme de SEV", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 25, nom: "Int&eacutegrales impropres", visible: false,  afficherComplet : false, afficherCorrige: false },
     { numero: 26, nom: "Applications lin&eacuteaires en dimension finie", visible: false, afficherComplet : false,  afficherCorrige: false },
