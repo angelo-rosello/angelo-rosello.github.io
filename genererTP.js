@@ -15,7 +15,8 @@ const tps = [
     { numero: "révisions1",  nom : "Corrigé", visible: true },
     { numero: 12, nom : "Matrices - Partie I", visible: true },
     { numero: 13, nom : "Matrices - Partie II", visible: true },
-    { numero: 14, nom : "Représentations graphiques - Partie I : suites)", visible: true },
+    { numero: 14, nom : "Représentations graphiques - Partie I : suites", visible: true },
+    { numero: 15, nom : "Représentations graphiques - Partie II : fonctions", visible: true }
     
     
     // Ajouter d'autres chapitres ici...
