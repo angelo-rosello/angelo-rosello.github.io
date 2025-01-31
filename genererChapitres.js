@@ -14,7 +14,7 @@ const chapitres = [
     { numero: 12, nom: "Systèmes linéaires", visible: true,  afficherComplet : true, afficherCorrige: true },
     { numero: 13, nom: "Dérivation", visible: true,  afficherComplet : true, afficherCorrige: true },
     { numero: 14, nom: "Matrices", visible: true, afficherComplet : true, afficherCorrige: true },
-    { numero: 15, nom: "Variables al&eéatoires finies", visible: true, afficherComplet : true,  afficherCorrige: true },
+    { numero: 15, nom: "Variables aléatoires finies", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 16, nom: "Intégration sur un segment", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 17, nom: "Espaces vectoriels", visible: true, afficherComplet : true, afficherCorrige: false },
     { numero: 18, nom: "Equivalence et négligeabilité", visible: false, afficherComplet : false,  afficherCorrige: false },
