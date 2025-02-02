@@ -17,7 +17,7 @@ const chapitres = [
     { numero: 15, nom: "Variables aléatoires finies", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 16, nom: "Intégration sur un segment", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 17, nom: "Espaces vectoriels", visible: true, afficherComplet : true, afficherCorrige: false },
-    { numero: 18, nom: "Equivalence et négligeabilité", visible: false, afficherComplet : false,  afficherCorrige: false },
+    { numero: 18, nom: "Equivalence et négligeabilité", visible: true, afficherComplet : false,  afficherCorrige: false },
     { numero: 19, nom: "Applications linéaires", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 20, nom: "Séries", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 21, nom: "Espaces probabilisés généraux", visible: false, afficherComplet : false,  afficherCorrige: false },
