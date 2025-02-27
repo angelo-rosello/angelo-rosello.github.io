@@ -19,7 +19,7 @@ const tps = [
     { numero: 15, nom : "Représentations graphiques - Partie II : fonctions", visible: true },
     { numero: 16, nom : "Calcul appproché d'intégrales", visible: true },
     { numero: 17, nom : "Conjecture de Syracuse", visible: true },
-    { numero: 18, nom : "Variables aléatoires - Parite I", visible: true }
+    { numero: 18, nom : "Variables aléatoires - Partie I", visible: true}
     
     
     // Ajouter d'autres chapitres ici...
