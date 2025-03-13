@@ -19,7 +19,7 @@ const chapitres = [
     { numero: 17, nom: "Espaces vectoriels", visible: true, afficherComplet : true, afficherCorrige: true },
     { numero: 18, nom: "Equivalence et négligeabilité", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 19, nom: "Applications linéaires", visible: true, afficherComplet : true,  afficherCorrige: true },
-    { numero: 20, nom: "Séries", visible: true, afficherComplet : true,  afficherCorrige: false },
+    { numero: 20, nom: "Séries", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 21, nom: "Espaces probabilisés généraux", visible: true, afficherComplet : true,  afficherCorrige: false },
     { numero: 22, nom: "Espaces vectoriels de dimension finie", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 23, nom: "Variables aléatoires discrètes", visible: false, afficherComplet : false,  afficherCorrige: false },
