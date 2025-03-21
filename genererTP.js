@@ -21,7 +21,8 @@ const tps = [
     { numero: 17, nom : "Conjecture de Syracuse", visible: true },
     { numero: 18, nom : "Variables aléatoires - Partie I", visible: true},
     { numero: 19, nom : "Illustrations sur les séries", visible: true} ,
-    { numero: 20, nom : "Variables aléatoires - Partie II", visible: true} 
+    { numero: 20, nom : "Variables aléatoires - Partie II", visible: true}, 
+    { numero: 21, nom : "Expériences aléatoires", visible: true}, 
     
     
     // Ajouter d'autres chapitres ici...
