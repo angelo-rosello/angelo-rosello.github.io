@@ -50,7 +50,7 @@ function genererChapitres() {
 
             // Ajouter le lien pour le cours complet et les exos si l'option est activée
             if (chapitre.afficherComplet) {
-                innerHTML += ' | <a href="cours.pdf" class="file-link" target="_blank">Cours complet</a>
+                innerHTML += ' | <a href="cours.pdf" class="file-link" target="_blank">Cours complet</a> \
                 | <a href="exercices.pdf" class="file-link" target="_blank">Exercices</a>';
             }
             
