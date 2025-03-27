@@ -26,7 +26,7 @@ const chapitres = [
     { numero: 24, nom: "Somme de SEV", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 25, nom: "Intégrales impropres", visible: false,  afficherComplet : false, afficherCorrige: false },
     { numero: 26, nom: "Applications linéaires en dimension finie", visible: false, afficherComplet : false,  afficherCorrige: false },
-    { numero: 27, nom: "Dérivées successives, formules de Talor", visible: false, afficherComplet : false,  afficherCorrige: false },
+    { numero: 27, nom: "Dérivées successives, formules de Taylor", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 28, nom: "Couples de variables aléatoires", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 29, nom: "Extrema et convexité", visible: false,  afficherComplet : false, afficherCorrige: false },
     { numero: 30, nom: "Convergences en probabilités", visible: false,  afficherComplet : false, afficherCorrige: false }, 
@@ -50,7 +50,7 @@ function genererChapitres() {
 
             // Ajouter le lien pour le cours complet et les exos si l'option est activée
             if (chapitre.afficherComplet) {
-                innerHTML += ' | <a href="cours.pdf" class="file-link" target="_blank">Cours complet</a> \
+                innerHTML += ' | <a href="cours.pdf" class="file-link" target="_blank">Cours complet</a>
                 | <a href="exercices.pdf" class="file-link" target="_blank">Exercices</a>';
             }
             
