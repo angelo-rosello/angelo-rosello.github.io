@@ -24,7 +24,8 @@ const tps = [
     { numero: 20, nom : "Variables aléatoires - Partie II", visible: true}, 
     { numero: 21, nom : "Expériences aléatoires", visible: true}, 
     { numero: 22, nom : "Variables aléatoires - Partie III (Loi des grands nombres)", visible: true}, 
-    { numero: 23, nom : "Polynôme interpolateur de Lagrange", visible: true}
+    { numero: 23, nom : "Polynôme interpolateur de Lagrange", visible: true},
+    { numero: 24, nom : "Diagrammes en bâton", visible: true}
     
     
     // Ajouter d'autres chapitres ici...
