@@ -25,7 +25,7 @@ const chapitres = [
     { numero: 23, nom: "Variables aléatoires discrètes", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 24, nom: "Somme de SEV", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 25, nom: "Intégrales impropres", visible: true,  afficherComplet : true, afficherCorrige: true }, 
-    { numero: 26, nom: "Applications linéaires en dimension finie", visible: false, afficherComplet : false,  afficherCorrige: false },
+    { numero: 26, nom: "Applications linéaires en dimension finie", visible: true, afficherComplet : true,  afficherCorrige: false },
     { numero: 27, nom: "Dérivées successives, formules de Taylor", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 28, nom: "Couples de variables aléatoires", visible: false, afficherComplet : false,  afficherCorrige: false },
     { numero: 29, nom: "Extrema et convexité", visible: false,  afficherComplet : false, afficherCorrige: false },
