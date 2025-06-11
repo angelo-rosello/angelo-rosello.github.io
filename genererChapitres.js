@@ -29,7 +29,7 @@ const chapitres = [
     { numero: 27, nom: "Dérivées successives, formules de Taylor", visible: true, afficherComplet : true,  afficherCorrige: true },
     { numero: 28, nom: "Couples de variables aléatoires", visible: true, afficherComplet : true,  afficherCorrige: false },
     { numero: 29, nom: "Extrema et convexité", visible: true,  afficherComplet : true, afficherCorrige: false },
-    { numero: 30, nom: "Convergences en probabilités", visible: false,  afficherComplet : false, afficherCorrige: false } 
+    { numero: 30, nom: "Convergences en probabilités", visible: true,  afficherComplet : true, afficherCorrige: false } 
 ];
 
 
