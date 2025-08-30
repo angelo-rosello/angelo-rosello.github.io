@@ -1,4 +1,4 @@
-// UPDATE 8
+// UPDATE 9
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
@@ -335,7 +335,7 @@ function genererChapitres() {
                 // Bouton "Complément" (triangle géré uniquement en CSS avec .open)
                 const toggle = document.createElement('span');
                 toggle.className = "toggle-meme";
-                toggle.textContent = 'Complément';
+                toggle.textContent = ''; // 'Complément';
 
                 const memeList = document.createElement('ul');
                 memeList.className = "meme-list";
