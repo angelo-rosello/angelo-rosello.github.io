@@ -1,4 +1,4 @@
-// UPDATE 12
+// UPDATE 13
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
@@ -6,8 +6,8 @@ const chapitres = [
         numero: 1,
         nom: "Logique et raisonnement",
         visible: true,
-        afficherComplet: true,
-        afficherCorrige: true,
+        afficherComplet: false,
+        afficherCorrige: false,
         memes: [
             { label: "Pour clarifier", url: "doc-eleves/memes/rock.png" },
             { label: "Base case = Initialisation", url: "https://www.instagram.com/reel/DF9OKmPuTlW/?utm_source=ig_web_copy_link&igsh=MWZ1a3Zlc2x1OXI1dA==" },
@@ -17,7 +17,7 @@ const chapitres = [
     {
         numero: 2,
         nom: "Somme et produits",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -27,7 +27,7 @@ const chapitres = [
     {
         numero: 3,
         nom: "Applications",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -37,7 +37,7 @@ const chapitres = [
     {
         numero: 4,
         nom: "Réels, fonctions numériques",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -47,7 +47,7 @@ const chapitres = [
     {
         numero: 5,
         nom: "Suites réelles",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -57,7 +57,7 @@ const chapitres = [
     {
         numero: 6,
         nom: "Polynômes",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -69,7 +69,7 @@ const chapitres = [
     {
         numero: 7,
         nom: "Limites de suites",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -80,7 +80,7 @@ const chapitres = [
     {
         numero: 8,
         nom: "Dénombrement",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -90,7 +90,7 @@ const chapitres = [
     {
         numero: 9,
         nom: "Limites de fonctions",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -102,7 +102,7 @@ const chapitres = [
     {
         numero: 10,
         nom: "Continuité",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -112,7 +112,7 @@ const chapitres = [
     {
         numero: 11,
         nom: "Espaces probabilisés finis",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -122,7 +122,7 @@ const chapitres = [
     {
         numero: 12,
         nom: "Systèmes linéaires",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: []
@@ -130,7 +130,7 @@ const chapitres = [
     {
         numero: 13,
         nom: "Dérivation",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -141,7 +141,7 @@ const chapitres = [
     {
         numero: 14,
         nom: "Matrices",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -152,7 +152,7 @@ const chapitres = [
     {
         numero: 15,
         nom: "Variables aléatoires finies",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: []
@@ -160,7 +160,7 @@ const chapitres = [
     {
         numero: 16,
         nom: "Intégration sur un segment",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -173,7 +173,7 @@ const chapitres = [
     {
         numero: 17,
         nom: "Espaces vectoriels",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -183,7 +183,7 @@ const chapitres = [
     {
         numero: 18,
         nom: "Equivalence et négligeabilité",
-        visible: true,
+        visible: false,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
@@ -194,7 +194,7 @@ const chapitres = [
     {
     numero: 19,
     nom: "Applications linéaires",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
@@ -204,7 +204,7 @@ const chapitres = [
 {
     numero: 20,
     nom: "Séries",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
@@ -216,7 +216,7 @@ const chapitres = [
 {
     numero: 21,
     nom: "Espaces probabilisés généraux",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
@@ -224,7 +224,7 @@ const chapitres = [
 {
     numero: 22,
     nom: "Espaces vectoriels de dimension finie",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
@@ -234,7 +234,7 @@ const chapitres = [
 {
     numero: 23,
     nom: "Variables aléatoires discrètes",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
@@ -252,7 +252,7 @@ const chapitres = [
 {
     numero: 25,
     nom: "Intégrales impropres",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
@@ -262,7 +262,7 @@ const chapitres = [
 {
     numero: 26,
     nom: "Applications linéaires en dimension finie",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
@@ -270,7 +270,7 @@ const chapitres = [
 {
     numero: 27,
     nom: "Dérivées successives, formules de Taylor",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
@@ -280,7 +280,7 @@ const chapitres = [
 {
     numero: 28,
     nom: "Couples de variables aléatoires",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
@@ -288,7 +288,7 @@ const chapitres = [
 {
     numero: 29,
     nom: "Extrema et convexité",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
@@ -296,7 +296,7 @@ const chapitres = [
 {
     numero: 30,
     nom: "Convergences en probabilités",
-    visible: true,
+    visible: false,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
@@ -330,7 +330,7 @@ function genererChapitres() {
             li.innerHTML = innerHTML;
 
             // Bloc memes
-            if (chapitre.memes && chapitre.memes.length > 0) {
+            if (chapitre.afficherComplet && chapitre.memes && chapitre.memes.length > 0) {
             
                 // Bouton "Complément" (triangle géré uniquement en CSS avec .open)
                 const toggle = document.createElement('span');
