@@ -295,7 +295,7 @@ button:hover {
 .meme-list {
   display: flex;          
   flex-wrap: wrap;        
-  gap: 15px;              /* espace horizontal légèrement plus grand */
+  gap: 20px;              /* espace horizontal entre les liens */
   max-height: 0;          
   overflow: hidden;
   transition: max-height 0.3s ease-out;
