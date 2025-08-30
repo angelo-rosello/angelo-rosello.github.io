@@ -1,4 +1,4 @@
-/* styles.css V3 */
+/* styles.css V4 */
 
 /* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -99,6 +99,14 @@ a:hover:after,
 .toggle-meme:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* Triangle indicateur pour Complément */
+.toggle-meme .triangle {
+    font-size: 0.8em;
+    margin-left: 4px;
+    display: inline-block;
+    transition: transform 0.2s;
 }
 
 /* Section principale */
@@ -292,7 +300,7 @@ button:hover {
   display: inline-flex;        /* s'adapte automatiquement au contenu */
   flex-wrap: wrap;
   gap: 30px;
-  flex-direction: row;         /* s’assure que les liens sont horizontaux */
+  flex-direction: row;         /* liens horizontaux */
 }
 
 /* conteneur flex pour les liens */
@@ -308,9 +316,9 @@ button:hover {
   margin: 0;
 }
 
-/* point séparateur avant chaque lien sauf le premier */
+/* point séparateur entre les liens (un seul) */
 .meme-list .meme-container li + li::before {
-  content: " • "; 
+  content: " • ";
   margin: 0 5px;
 }
 
