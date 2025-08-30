@@ -2,95 +2,150 @@
 const chapitres = [  
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherComplet : true, afficherCorrige: true,
     memes: [
-        { label: "Meme PNG", url: "memes/chapitre1/meme1.png" },
-        { label: "TikTok drôle", url: "https://www.tiktok.com/..." }
+        { label : "Pour clarifier", url : "memes/rock.png"},
+        { label: "Base case = Initialisation", url : "https://www.instagram.com/reel/DF9OKmPuTlW/?utm_source=ig_web_copy_link&igsh=MWZ1a3Zlc2x1OXI1dA=="},
+        { label: "Big brains in the group chat", url : "https://www.instagram.com/reel/DH0nhBUIb0E/?utm_source=ig_web_copy_link&igsh=MW44eTZhM2pjNnVsdw=="}
       ]
     },
-    { numero: 2, nom: "Somme et produits", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 2, nom: "Somme et produits", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Par pitié", url : "memes/sum.png"}
+    ]
+    },
+    { numero: 3, nom: "Applications", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        { label: "Motivational speech", url : "https://www.instagram.com/reel/DHdw7kAyLbJ/?utm_source=ig_web_copy_link&igsh=b3cybWRrN3hvcWhr"}
+    ]
+    },
+    { numero: 4, nom: "Réels, fonctions numériques", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Il y a 3 angles à connaître...", url: "https://www.instagram.com/reel/C6bKri4IwAq/?utm_source=ig_web_copy_link&igsh=eWo2NnhyOGk2bXdn"}
+    ]
+    },
+    { numero: 5, nom: "Suites réelles", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label : "Hors sujet mais relatable", url : "https://www.instagram.com/reel/DCJg7sjsnIJ/?utm_source=ig_web_copy_link&igsh=NXdma2xmdXMyY3M0"}
+    ]
+    },
+    { numero: 6, nom: "Polynômes", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        { label : "Dosez", url : "memes/cuillere.png"},
+        { label : "Racine évidente", url : "https://www.instagram.com/reel/DJl5PbPM8fz/?utm_source=ig_web_copy_link&igsh=dGNlZnJ4N3FoM2V0"},
+        { label : "Seulement pour les polynôme unitaires", url: "https://www.instagram.com/reel/DBrPbFdtuWs/?utm_source=ig_web_copy_link&igsh=MWl4cTRqMDJpM3ZnZw=="}
+    ]
+    },
+    { numero: 7, nom: "Limites de suites", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label : "Bienvenue dans le vrai monde", url : "https://www.instagram.com/reel/DC1RmQyIQgH/?utm_source=ig_web_copy_link&igsh=aGdvb21keDk3N2Fo"},
+        {label: "'c'EsT uNe FoRmE iNdEtErMiNeE", url : "https://www.instagram.com/reel/DE2N3bVM621/?utm_source=ig_web_copy_link&igsh=YmthaXRxbTR4OXl3"}
+    ]
+    },
+    { numero: 8, nom: "Dénombrement", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label : "LVB español", url: "memes/espanol.png"}
+    ]
+    },
+    { numero: 9, nom: "Limites de fonctions", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Name a better duo", url: "https://www.instagram.com/reel/C_K0l97o7MK/?utm_source=ig_web_copy_link&igsh=MXBpdjd3cDdkZHl3bw=="},
+        {label: "Toujours pas", url : "https://www.instagram.com/reel/DE2N3bVM621/?utm_source=ig_web_copy_link&igsh=YmthaXRxbTR4OXl3"},
+        {label: "Technique connue des plus grands", url: "https://www.instagram.com/reel/DA3g-uDtXNk/?utm_source=ig_web_copy_link&igsh=MTBrZjR2YnIwaGExcg=="}
+    ]
+    },
+    { numero: 10, nom: "Continuité", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "L'essence du TVI", url : "memes/tvi.png"}
+    ]
+    },
+    { numero: 11, nom: "Espaces probabilisés finis", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Enfin une application concrète", url = "memes/bayes.png"}
+    ]
+    },
+    { numero: 12, nom: "Systèmes linéaires", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     },
-    { numero: 3, nom: "Applications", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 13, nom: "Dérivation", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Bro can handle it", url : "https://www.instagram.com/reel/DFoQFXUz8dX/?utm_source=ig_web_copy_link&igsh=OTExZjJ1dGVvbHFu"},
+        {label: "Coup dur", url : "https://www.instagram.com/reel/DFabKTpOoid/?utm_source=ig_web_copy_link&igsh=MTJoend3Zno1eTVlOA=="},
+    ]
+    },
+    { numero: 14, nom: "Matrices", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "No better answer", url: "https://www.instagram.com/reel/DFoQFXUz8dX/?utm_source=ig_web_copy_link&igsh=OTExZjJ1dGVvbHFu"},
+        {label: "Un grand classique", url : "memes/luigi.png"}
+    ]
+    },
+    { numero: 15, nom: "Variables aléatoires finies", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     },
-    { numero: 4, nom: "Réels, fonctions numériques", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 16, nom: "Intégration sur un segment", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label : "Intégrer, c'est dur", url : "memes/integration.png"},
+        {label : "Visualisation de l'IPP", url : "memes/minecraft.png"},
+        {label : "Ah sh$t, here we go again", url : "memes/orange.png"},
+        { label : "Exo bonus", url : "memes/exo.png"}
+    ]
+    },
+    { numero: 17, nom: "Espaces vectoriels", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label : "Souvent dur à encaisser, ce chapitre", url : "memes/shrek"},
+    ]
+    },
+    { numero: 18, nom: "Equivalence et négligeabilité", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/Cy8sanCsXAb/?utm_source=ig_web_copy_link&igsh=MTlweTI2dHl3bXQyZQ=="},
+    ]
+    },
+    { numero: 19, nom: "Applications linéaires", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label : "Hors sujet mais relatable", url : "https://www.instagram.com/reel/DFdUuKSokmo/?utm_source=ig_web_copy_link&igsh=MW8ycWM5bGhzMTZ3Yw=="}
+    ]
+    },
+    { numero: 20, nom: "Séries", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "A vérifier en premier", url: "https://www.instagram.com/reel/C3N0Du0I821/?utm_source=ig_web_copy_link&igsh=ZjEyeXBnM3FueGlq"},
+        {label : "Ref de 2014", url : "memes/divergent.png"},
+        {label : "Ref de 2024", url : "https://www.instagram.com/reel/C2sdp0CIBWy/?utm_source=ig_web_copy_link&igsh=MTB1amU0aGluOTBsZg=="}
+    ]
+    },
+    { numero: 21, nom: "Espaces probabilisés généraux", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     },
-    { numero: 5, nom: "Suites réelles", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 22, nom: "Espaces vectoriels de dimension finie", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Tout n'était qu'un rêve fiévreux", url: "https://www.instagram.com/reel/C_3yRbXMo8o/?utm_source=ig_web_copy_link&igsh=MW4wMmZsdHpkMHM5dg=="}
+    ]
+    },
+    { numero: 23, nom: "Variables aléatoires discrètes", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     },
-    { numero: 6, nom: "Polynômes", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
+    { numero: 24, nom: "Somme de SEV", visible: false,  afficherComplet : true, afficherCorrige: false,
+    memes: [
+        {label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/C6RKwj9Iekr/?utm_source=ig_web_copy_link&igsh=MXZkdzU4anQxcWR4dw=="}
+    ]
     },
-    { numero: 7, nom: "Limites de suites", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 8, nom: "Dénombrement", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 9, nom: "Limites de fonctions", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 10, nom: "Continuité", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 11, nom: "Espaces probabilisés finis", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 12, nom: "Systèmes linéaires", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 13, nom: "Dérivation", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 14, nom: "Matrices", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 15, nom: "Variables aléatoires finies", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 16, nom: "Intégration sur un segment", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 17, nom: "Espaces vectoriels", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 18, nom: "Equivalence et négligeabilité", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 19, nom: "Applications linéaires", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 20, nom: "Séries", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 21, nom: "Espaces probabilisés généraux", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 22, nom: "Espaces vectoriels de dimension finie", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 23, nom: "Variables aléatoires discrètes", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 24, nom: "Somme de SEV", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 25, nom: "Intégrales impropres", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
+    { numero: 25, nom: "Intégrales impropres", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label : "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DBBPnz5IgzR/?utm_source=ig_web_copy_link&igsh=MTk0bmNzcjVjZHdiZQ=="}
+    ]
     }, 
-    { numero: 26, nom: "Applications linéaires en dimension finie", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 26, nom: "Applications linéaires en dimension finie", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     },
-    { numero: 27, nom: "Dérivées successives, formules de Taylor", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 27, nom: "Dérivées successives, formules de Taylor", visible: true,  afficherComplet : false, afficherCorrige: false,
+    memes: [
+        {label: "Les vraies Swifties", url: "memes/taylor.png"}
+    ]
+    },
+    { numero: 28, nom: "Couples de variables aléatoires", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     },
-    { numero: 28, nom: "Couples de variables aléatoires", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 29, nom: "Extrema et convexité", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     },
-    { numero: 29, nom: "Extrema et convexité", visible: false,  afficherComplet : false, afficherCorrige: false,
-    memes: []
-    },
-    { numero: 30, nom: "Convergences en probabilités", visible: false,  afficherComplet : false, afficherCorrige: false,
+    { numero: 30, nom: "Convergences en probabilités", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: []
     }
 ];
