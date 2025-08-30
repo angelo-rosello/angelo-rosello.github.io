@@ -1,4 +1,4 @@
-// UPDATE 7
+// UPDATE 8
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
@@ -304,7 +304,6 @@ const chapitres = [
     
 ];
 
-
 // Fonction pour générer les éléments HTML pour chaque chapitre
 function genererChapitres() {
     const ul = document.querySelector('.chapitres ul');
@@ -333,21 +332,10 @@ function genererChapitres() {
             // Bloc memes
             if (chapitre.memes && chapitre.memes.length > 0) {
 
+                // Bouton "Complément" (triangle géré uniquement en CSS avec .open)
                 const toggle = document.createElement('span');
                 toggle.className = "toggle-meme";
-                toggle.innerHTML = 'Complément <span class="triangle">▼</span>'; // triangle vers le bas par défaut
-                
-                toggle.addEventListener('click', () => {
-                    memeList.classList.toggle('open');
-                
-                    // changer le triangle selon l'état
-                    const triangle = toggle.querySelector('.triangle');
-                    if (memeList.classList.contains('open')) {
-                        triangle.textContent = '▲';
-                    } else {
-                        triangle.textContent = '▼';
-                    }
-                });
+                toggle.textContent = 'Complément';
 
                 const memeList = document.createElement('ul');
                 memeList.className = "meme-list";
@@ -355,27 +343,19 @@ function genererChapitres() {
                 const memeContainer = document.createElement('div');
                 memeContainer.className = 'meme-container';
 
-                chapitre.memes.forEach((meme, index) => {
+                chapitre.memes.forEach(meme => {
                     const liMeme = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = meme.url;
                     a.target = "_blank";
                     a.textContent = meme.label;
                     liMeme.appendChild(a);
-                
-                    // ajouter un point noir uniquement entre les liens (pas après le dernier)
-                    if (index < chapitre.memes.length - 1) {
-                        const sep = document.createElement('span');
-                        sep.textContent = ' • ';
-                        liMeme.appendChild(sep);
-                    }
-                
                     memeContainer.appendChild(liMeme);
                 });
 
                 memeList.appendChild(memeContainer);
 
-                // meme-list dans un conteneur à la ligne, toggle reste inline
+                // bloc séparé pour forcer le retour à la ligne
                 const memeBlock = document.createElement('div');
                 memeBlock.style.display = 'block';
                 memeBlock.appendChild(memeList);
@@ -387,6 +367,7 @@ function genererChapitres() {
                 // toggle l’affichage
                 toggle.addEventListener('click', () => {
                     memeList.classList.toggle('open');
+                    toggle.classList.toggle('open'); // pour la flèche CSS
                 });
             }
 
