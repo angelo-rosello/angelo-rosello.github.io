@@ -1,4 +1,4 @@
-// UPDATE 6
+// UPDATE 7
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
