@@ -1,4 +1,4 @@
-/* styles.css V2 */
+/* styles.css V3 */
 
 /* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -291,7 +291,7 @@ button:hover {
 .meme-list.open {
   display: inline-flex;        /* s'adapte automatiquement au contenu */
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
 }
 
 .meme-list .meme-container {
