@@ -291,28 +291,30 @@ button:hover {
     }
 }
 
-/* Liste de memes en accordéon - affichage horizontal avec underline animée */
+/* Liste de memes en accordéon - affichage horizontal avec underline animée et encadré */
 .meme-list {
-  display: flex;          /* alignement horizontal */
-  flex-wrap: wrap;        /* passe à la ligne si trop de liens */
-  gap: 10px;              /* espace entre les liens */
-  max-height: 0;          /* fermé par défaut */
+  display: flex;          
+  flex-wrap: wrap;        
+  gap: 15px;              /* espace horizontal légèrement plus grand */
+  max-height: 0;          
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   list-style: none;
-  padding-left: 0;
+  padding: 10px;          /* espace intérieur pour le rectangle */
   margin-top: 5px;
+  border: 1px dashed #8FB9A8; /* petit rectangle en pointillés */
+  border-radius: 5px;     /* coins légèrement arrondis */
 }
 
 .meme-list.open {
-  max-height: 200px;      /* ajuste selon la taille de ton contenu */
+  max-height: 200px;      
 }
 
 .meme-list li {
-  margin: 0;              /* plus de marge verticale */
+  margin: 0;              
 }
 
-/* Style des liens dans la meme-list, comme les liens normaux */
+/* Style des liens dans la meme-list */
 .meme-list li a {
   color: #0066cc;
   text-decoration: none;
