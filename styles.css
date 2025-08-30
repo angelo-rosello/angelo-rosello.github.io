@@ -101,12 +101,16 @@ a:hover:after,
     transform-origin: bottom left;
 }
 
-/* Triangle indicateur pour Complément */
-.toggle-meme .triangle {
+/* --- Triangle pour "Complément" --- */
+.toggle-meme::after {
+    content: " ▼";
     font-size: 0.8em;
     margin-left: 4px;
-    display: inline-block;
     transition: transform 0.2s;
+}
+
+.toggle-meme.open::after {
+    content: " ▲";
 }
 
 /* Section principale */
@@ -300,7 +304,7 @@ button:hover {
   display: inline-flex;        /* s'adapte automatiquement au contenu */
   flex-wrap: wrap;
   gap: 30px;
-  flex-direction: row;         /* liens horizontaux */
+  flex-direction: row;         /* s’assure que les liens sont horizontaux */
 }
 
 /* conteneur flex pour les liens */
@@ -316,9 +320,9 @@ button:hover {
   margin: 0;
 }
 
-/* point séparateur entre les liens (un seul) */
+/* point séparateur avant chaque lien sauf le premier */
 .meme-list .meme-container li + li::before {
-  content: " • ";
+  content: " • "; 
   margin: 0 5px;
 }
 
