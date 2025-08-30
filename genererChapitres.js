@@ -177,7 +177,7 @@ const chapitres = [
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
-            { label: "Souvent dur à encaisser, ce chapitre", url: "doc-eleves/memes/shrek" }
+            { label: "Souvent dur à encaisser, ce chapitre", url: "doc-eleves/memes/shrek.png" }
         ]
     },
     {
