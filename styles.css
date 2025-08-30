@@ -1,4 +1,4 @@
-/* styles.css V11 */
+/* styles.css V12 */
 
 /* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -369,8 +369,8 @@ button:hover {
 
 /* Icône Instagram à côté des liens Instagram */
 .meme-list .meme-container li a .insta-icon {
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     margin-right: 4px;
     vertical-align: text-bottom;
 
