@@ -311,6 +311,7 @@ button:hover {
 .meme-list li {
   margin: 4px 0;
 }
+
 .toggle-meme {
   color: #0645AD;           /* bleu standard */
   text-decoration: underline;
