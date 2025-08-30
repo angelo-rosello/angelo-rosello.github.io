@@ -1,4 +1,4 @@
-// UPDATE 2
+// UPDATE 3
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [  
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherComplet : true, afficherCorrige: true,
