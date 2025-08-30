@@ -204,6 +204,7 @@ function genererChapitres() {
 
                 
                 li.appendChild(document.createTextNode(" | "));
+                li.appendChild(document.createElement('br')); // ← ajoute un saut de ligne
                 li.appendChild(toggle);
                 li.appendChild(memeList);
                 
