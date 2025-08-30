@@ -124,7 +124,7 @@ function genererChapitres() {
             // Bloc memes (si défini et non vide)
             if (chapitre.visible) && (chapitre.memes && chapitre.memes.length > 0) {
                 innerHTML += `
-                    <button class="toggle-meme">😏 Voir les memes</button>
+                    <span class="toggle-meme">Ressources complémentaires</span>
                     <ul class="meme-list">`;
                 chapitre.memes.forEach(meme => {
                     innerHTML += `<li><a href="${meme.url}" target="_blank">${meme.label}</a></li>`;
@@ -138,12 +138,13 @@ function genererChapitres() {
     });
 
     // Brancher les événements de toggle après génération
-    document.querySelectorAll('.toggle-meme').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const list = btn.nextElementSibling;
+    document.querySelectorAll('.toggle-meme').forEach(el => {
+        el.addEventListener('click', () => {
+            const list = el.nextElementSibling;
             list.classList.toggle('open');
         });
     });
+
 }
 
 // Appeler la fonction pour générer les chapitres au chargement du document
