@@ -1,4 +1,4 @@
-// UPDATE 9
+// UPDATE 10
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
@@ -331,45 +331,62 @@ function genererChapitres() {
 
             // Bloc memes
             if (chapitre.memes && chapitre.memes.length > 0) {
-
+            
                 // Bouton "Complément" (triangle géré uniquement en CSS avec .open)
                 const toggle = document.createElement('span');
                 toggle.className = "toggle-meme";
                 toggle.textContent = '+'; // 'Complément';
-
+            
                 const memeList = document.createElement('ul');
                 memeList.className = "meme-list";
-
+            
                 const memeContainer = document.createElement('div');
                 memeContainer.className = 'meme-container';
-
+            
                 chapitre.memes.forEach(meme => {
                     const liMeme = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = meme.url;
                     a.target = "_blank";
                     a.textContent = meme.label;
+            
+                    // Ajouter l'icône Instagram si le lien contient "instagram.com"
+                    if (meme.url.includes('instagram.com')) {
+                        const instaIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                        instaIcon.setAttribute("viewBox", "0 0 24 24");
+                        instaIcon.setAttribute("class", "instagram-icon");
+                        instaIcon.setAttribute("width", "12");
+                        instaIcon.setAttribute("height", "12");
+                        instaIcon.innerHTML = `
+                            <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.772.13 4.642.443 3.678 1.407 2.714 2.371 2.401 3.5 2.343 4.78.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.058 1.28.371 2.409 1.335 3.373.964.964 2.093 1.277 3.373 1.335 1.28.058 1.689.072 4.948.072s3.668-.014 4.948-.072c1.28-.058 2.409-.371 3.373-1.335.964-.964 1.277-2.093 1.335-3.373.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.058-1.28-.371-2.409-1.335-3.373-.964-.964-2.093-1.277-3.373-1.335C15.668.014 15.259 0 12 0z"/>
+                            <path fill="currentColor" d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
+                            <circle fill="currentColor" cx="18.406" cy="5.594" r="1.44"/>
+                        `;
+                        a.appendChild(instaIcon);
+                    }
+            
                     liMeme.appendChild(a);
                     memeContainer.appendChild(liMeme);
                 });
-
+            
                 memeList.appendChild(memeContainer);
-
+            
                 // bloc séparé pour forcer le retour à la ligne
                 const memeBlock = document.createElement('div');
                 memeBlock.style.display = 'block';
                 memeBlock.appendChild(memeList);
-
+            
                 li.appendChild(document.createTextNode(" | "));
                 li.appendChild(toggle);
                 li.appendChild(memeBlock);
-
+            
                 // toggle l’affichage
                 toggle.addEventListener('click', () => {
                     memeList.classList.toggle('open');
                     toggle.classList.toggle('open'); // pour la flèche CSS
                 });
             }
+
 
             ul.appendChild(li);
         }
