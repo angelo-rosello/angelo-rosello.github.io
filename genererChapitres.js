@@ -2,7 +2,7 @@
 const chapitres = [  
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherComplet : true, afficherCorrige: true,
     memes: [
-        { label : "Pour clarifier", url : "memes/rock.png"},
+        { label : "Pour clarifier", url : "doc-eleves/memes/rock.png"},
         { label: "Base case = Initialisation", url : "https://www.instagram.com/reel/DF9OKmPuTlW/?utm_source=ig_web_copy_link&igsh=MWZ1a3Zlc2x1OXI1dA=="},
         { label: "Big brains in the group chat", url : "https://www.instagram.com/reel/DH0nhBUIb0E/?utm_source=ig_web_copy_link&igsh=MW44eTZhM2pjNnVsdw=="}
       ]
@@ -29,7 +29,7 @@ const chapitres = [
     },
     { numero: 6, nom: "Polynômes", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        { label : "Dosez", url : "memes/cuillere.png"},
+        { label : "Dosez", url : "doc-eleves/memes/cuillere.png"},
         { label : "Racine évidente", url : "https://www.instagram.com/reel/DJl5PbPM8fz/?utm_source=ig_web_copy_link&igsh=dGNlZnJ4N3FoM2V0"},
         { label : "Seulement pour les polynôme unitaires", url: "https://www.instagram.com/reel/DBrPbFdtuWs/?utm_source=ig_web_copy_link&igsh=MWl4cTRqMDJpM3ZnZw=="}
     ]
@@ -42,7 +42,7 @@ const chapitres = [
     },
     { numero: 8, nom: "Dénombrement", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label : "LVB español", url: "memes/espanol.png"}
+        {label : "LVB español", url: "doc-eleves/memes/espanol.png"}
     ]
     },
     { numero: 9, nom: "Limites de fonctions", visible: true,  afficherComplet : false, afficherCorrige: false,
@@ -54,12 +54,12 @@ const chapitres = [
     },
     { numero: 10, nom: "Continuité", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label: "L'essence du TVI", url : "memes/tvi.png"}
+        {label: "L'essence du TVI", url : "doc-eleves/memes/tvi.png"}
     ]
     },
     { numero: 11, nom: "Espaces probabilisés finis", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label: "Enfin une application concrète", url = "memes/bayes.png"}
+        {label: "Enfin une application concrète", url = "doc-eleves/memes/bayes.png"}
     ]
     },
     { numero: 12, nom: "Systèmes linéaires", visible: true,  afficherComplet : false, afficherCorrige: false,
@@ -74,7 +74,7 @@ const chapitres = [
     { numero: 14, nom: "Matrices", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
         {label: "No better answer", url: "https://www.instagram.com/reel/DFoQFXUz8dX/?utm_source=ig_web_copy_link&igsh=OTExZjJ1dGVvbHFu"},
-        {label: "Un grand classique", url : "memes/luigi.png"}
+        {label: "Un grand classique", url : "doc-eleves/memes/luigi.png"}
     ]
     },
     { numero: 15, nom: "Variables aléatoires finies", visible: true,  afficherComplet : false, afficherCorrige: false,
@@ -82,15 +82,15 @@ const chapitres = [
     },
     { numero: 16, nom: "Intégration sur un segment", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label : "Intégrer, c'est dur", url : "memes/integration.png"},
-        {label : "Visualisation de l'IPP", url : "memes/minecraft.png"},
-        {label : "Ah sh$t, here we go again", url : "memes/orange.png"},
-        { label : "Exo bonus", url : "memes/exo.png"}
+        {label : "Intégrer, c'est dur", url : "doc-eleves/memes/integration.png"},
+        {label : "Visualisation de l'IPP", url : "doc-eleves/memes/minecraft.png"},
+        {label : "Ah sh$t, here we go again", url : "doc-eleves/memes/orange.png"},
+        { label : "Exo bonus", url : "doc-eleves/memes/exo.png"}
     ]
     },
     { numero: 17, nom: "Espaces vectoriels", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label : "Souvent dur à encaisser, ce chapitre", url : "memes/shrek"},
+        {label : "Souvent dur à encaisser, ce chapitre", url : "doc-eleves/memes/shrek"},
     ]
     },
     { numero: 18, nom: "Equivalence et négligeabilité", visible: true,  afficherComplet : false, afficherCorrige: false,
@@ -106,7 +106,7 @@ const chapitres = [
     { numero: 20, nom: "Séries", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
         {label: "A vérifier en premier", url: "https://www.instagram.com/reel/C3N0Du0I821/?utm_source=ig_web_copy_link&igsh=ZjEyeXBnM3FueGlq"},
-        {label : "Ref de 2014", url : "memes/divergent.png"},
+        {label : "Ref de 2014", url : "doc-eleves/memes/divergent.png"},
         {label : "Ref de 2024", url : "https://www.instagram.com/reel/C2sdp0CIBWy/?utm_source=ig_web_copy_link&igsh=MTB1amU0aGluOTBsZg=="}
     ]
     },
@@ -136,7 +136,7 @@ const chapitres = [
     },
     { numero: 27, nom: "Dérivées successives, formules de Taylor", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label: "Les vraies Swifties", url: "memes/taylor.png"}
+        {label: "Les vraies Swifties", url: "doc-eleves/memes/taylor.png"}
     ]
     },
     { numero: 28, nom: "Couples de variables aléatoires", visible: true,  afficherComplet : false, afficherCorrige: false,
