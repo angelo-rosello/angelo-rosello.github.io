@@ -13,7 +13,6 @@ body {
     color: #333;
 }
 
-/* On force l'affichage de la barre de scroll */
 html {
     overflow-y: scroll;
 }
@@ -169,7 +168,6 @@ input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focu
     border-color: #2C3E50;
 }
 
-/* Styles pour les boutons */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -185,136 +183,58 @@ button:hover {
     background-color: #8FB9A8;
 }
 
-/* Animation fade-in */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in forwards;
-}
+/* Animations fade-in et fade-out */
+.fade-in { opacity: 0; animation: fadeIn 0.5s ease-in forwards; }
+.fade-out { animation: fadeOut 0.5s ease-out forwards; }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Animation fade-out */
-.fade-out {
-    animation: fadeOut 0.5s ease-out forwards;
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
+@keyframes fadeIn { to { opacity: 1; } }
+@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
 
 /* Animation zoom-in */
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.animate-zoomIn {
-    opacity: 0;
-    animation: zoomIn 1s forwards;
-    animation-delay: 0.3s;
-}
-
-.animate-zoomIn-slow {
-    opacity: 0;
-    animation: zoomIn 1s forwards;
-    animation-delay: 0.8s;
-}
+@keyframes zoomIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+.animate-zoomIn { opacity: 0; animation: zoomIn 1s forwards; animation-delay: 0.3s; }
+.animate-zoomIn-slow { opacity: 0; animation: zoomIn 1s forwards; animation-delay: 0.8s; }
 
 /* Animation shake */
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-}
-
-.shake {
-    animation: shake 0.5s;
-}
+@keyframes shake { 0%,100%{transform:translateX(0);} 25%{transform:translateX(-5px);} 50%{transform:translateX(5px);} 75%{transform:translateX(-5px);} }
+.shake { animation: shake 0.5s; }
 
 /* Style pour l'image du garde */
-.guard-image {
-    width: 67px;
-    height: 65px;
-    display: inline-block;
-}
+.guard-image { width: 67px; height: 65px; display: inline-block; }
 
 /* Styles réactifs pour mobile */
 @media (max-width: 768px) {
-    nav ul {
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 10px;
-        margin: 0;
-        max-width: 100%;
-        box-shadow: none;
-    }
-
-    .intro {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .shadow-img {
-        max-height: 70%;
-        max-width: 70%;
-        margin-top: 10px;
-        margin-bottom: -20px;
-    }
-
-    .contact-info {
-        text-align: center;
-        margin-left: 0;
-    }
+    nav ul { text-align: center; padding: 0 10px; }
+    nav ul li { display: block; margin: 10px 0; }
+    main { padding: 10px; margin: 0; max-width: 100%; box-shadow: none; }
+    .intro { flex-direction: column; align-items: center; }
+    .shadow-img { max-height: 70%; max-width: 70%; margin-top: 10px; margin-bottom: -20px; }
+    .contact-info { text-align: center; margin-left: 0; }
 }
 
 /* Liste de memes en accordéon - affichage horizontal avec underline animée et encadré */
 .meme-list {
-  display: flex;          
-  flex-wrap: wrap;        
-  gap: 20px;              /* espace horizontal entre les liens */
-  max-height: 0;          
+  display: block;           /* block pour que max-height fonctionne correctement */
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   list-style: none;
-  padding: 10px;          /* espace intérieur pour le rectangle */
+  padding: 10px;
   margin-top: 5px;
-  border: 1px dashed #8FB9A8; /* petit rectangle en pointillés */
-  border-radius: 5px;     /* coins légèrement arrondis */
+  border: 1px dashed #8FB9A8;
+  border-radius: 5px;
 }
 
 .meme-list.open {
-  max-height: 200px;      
+  max-height: 500px;        /* assez grand pour contenir tous les liens */
 }
 
 .meme-list li {
-  margin: 0;              
+  display: inline-block;    /* alignement horizontal */
+  margin-right: 20px;       /* espacement horizontal entre les liens */
 }
 
-/* Style des liens dans la meme-list */
+/* Style des liens dans la meme-list avec underline animée */
 .meme-list li a {
   color: #0066cc;
   text-decoration: none;
