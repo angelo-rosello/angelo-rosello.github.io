@@ -1,4 +1,4 @@
-/* styles.css */  
+/* styles.css V2 */
 
 /* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -13,6 +13,7 @@ body {
     color: #333;
 }
 
+/* On force l'affichage de la barre de scroll */
 html {
     overflow-y: scroll;
 }
@@ -129,7 +130,7 @@ footer {
     color: #fff;
 }
 
-/* Contact */
+/* Style du texte "contact" */
 .contact-info {
     font-style: normal;
     font-size: 0.8rem;
@@ -137,7 +138,7 @@ footer {
     margin-left: 50px;
 }
 
-/* Page d'accueil */
+/* Style de la page d'accueil (image et texte) */
 .intro {
     display: flex;
     align-items: center;
@@ -152,7 +153,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Inputs */
+/* Styles pour les entrées de texte et les boutons */
 input[type="password"], input[type="text"], input[type="email"] {
     padding: 10px;
     font-size: 16px;
@@ -168,7 +169,7 @@ input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focu
     border-color: #2C3E50;
 }
 
-/* Buttons */
+/* Styles pour les boutons */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -184,52 +185,119 @@ button:hover {
     background-color: #8FB9A8;
 }
 
-/* Animations */
-.fade-in { opacity: 0; animation: fadeIn 0.5s ease-in forwards; }
-@keyframes fadeIn { to { opacity: 1; } }
-
-.fade-out { animation: fadeOut 0.5s ease-out forwards; }
-@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
-
-@keyframes zoomIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
-.animate-zoomIn { opacity: 0; animation: zoomIn 1s forwards; animation-delay: 0.3s; }
-.animate-zoomIn-slow { opacity: 0; animation: zoomIn 1s forwards; animation-delay: 0.8s; }
-
-@keyframes shake { 0%,100% {transform: translateX(0);} 25%{transform: translateX(-5px);}50%{transform: translateX(5px);}75%{transform: translateX(-5px);} }
-.shake { animation: shake 0.5s; }
-
-.guard-image { width: 67px; height: 65px; display: inline-block; }
-
-/* Responsive */
-@media (max-width: 768px) {
-    nav ul { text-align: center; padding: 0 10px; }
-    nav ul li { display: block; margin: 10px 0; }
-    main { padding: 10px; margin: 0; max-width: 100%; box-shadow: none; }
-    .intro { flex-direction: column; align-items: center; }
-    .shadow-img { max-height: 70%; max-width: 70%; margin-top: 10px; margin-bottom: -20px; }
-    .contact-info { text-align: center; margin-left: 0; }
+/* Animation fade-in */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
 }
 
-/* Meme-list horizontal et masquée */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Animation fade-out */
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Animation zoom-in */
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.animate-zoomIn {
+    opacity: 0;
+    animation: zoomIn 1s forwards;
+    animation-delay: 0.3s;
+}
+
+.animate-zoomIn-slow {
+    opacity: 0;
+    animation: zoomIn 1s forwards;
+    animation-delay: 0.8s;
+}
+
+/* Animation shake */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+/* Style pour l'image du garde */
+.guard-image {
+    width: 67px;
+    height: 65px;
+    display: inline-block;
+}
+
+/* Styles réactifs pour mobile */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shadow-img {
+        max-height: 70%;
+        max-width: 70%;
+        margin-top: 10px;
+        margin-bottom: -20px;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+/* Liste de memes en accordéon - affichage horizontal, rectangle adaptatif */
 .meme-list {
-  display: block;               /* block parent pour encadré */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  padding: 5px;
+  display: none;               /* complètement masqué quand fermé */
+  padding: 5px 10px;
   margin-top: 5px;
   border: 1px dashed #8FB9A8;
   border-radius: 5px;
 }
 
 .meme-list.open {
-  max-height: 300px;            /* suffisant pour contenir les liens */
+  display: inline-flex;        /* s'adapte automatiquement au contenu */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .meme-list .meme-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;                   /* espace horizontal et vertical */
+  gap: 10px;
 }
 
 .meme-list .meme-container li {
