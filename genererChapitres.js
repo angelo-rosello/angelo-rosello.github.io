@@ -21,7 +21,7 @@ const chapitres = [
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
-            { label: "Par pitié", url: "memes/sum.png" }
+            { label: "Par pitié", url: "doc-eleves/memes/sum.png" }
         ]
     },
     {
