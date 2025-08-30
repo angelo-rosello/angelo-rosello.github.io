@@ -1,3 +1,4 @@
+// UPDATE
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [  
     { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherComplet : true, afficherCorrige: true,
@@ -59,7 +60,7 @@ const chapitres = [
     },
     { numero: 11, nom: "Espaces probabilisés finis", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label: "Enfin une application concrète", url : "doc-eleves/memes/bayes.png"}
+        {label: "Enfin une application concrète", url : "doc-eleves/memes/bayes.png"} 
     ]
     },
     { numero: 12, nom: "Systèmes linéaires", visible: true,  afficherComplet : false, afficherCorrige: false,
