@@ -122,7 +122,7 @@ function genererChapitres() {
             }
 
             // Bloc memes (si défini et non vide)
-            if (chapitre.memes && chapitre.memes.length > 0) {
+            if (chapitre.visible) && (chapitre.memes && chapitre.memes.length > 0) {
                 innerHTML += `
                     <button class="toggle-meme">😏 Voir les memes</button>
                     <ul class="meme-list">`;
