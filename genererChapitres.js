@@ -105,46 +105,55 @@ function genererChapitres() {
         if (chapitre.visible) {
             const li = document.createElement('li');
             li.setAttribute('data-visible', 'true');
-            li.setAttribute('data-folder', `chapitre${chapitre.numero}`); // Utilisation du numéro de chapitre
+            li.setAttribute('data-folder', `chapitre${chapitre.numero}`);
             
+            // Bloc principal (poly, cours, corrigé)
             let innerHTML = `
                 Chapitre ${chapitre.numero} (${chapitre.nom}) :
                 <a href="vierge.pdf" class="file-link" target="_blank">Poly vierge</a>`;
-
-            // Ajouter le lien pour le cours complet et les exos si l'option est activée
+            
             if (chapitre.afficherComplet) {
-                innerHTML += ' | <a href="cours.pdf" class="file-link" target="_blank">Cours complet</a> | <a href="exercices.pdf" class="file-link" target="_blank">Exercices</a>';
+                innerHTML += ' | <a href="cours.pdf" target="_blank">Cours complet</a> | <a href="exercices.pdf" target="_blank">Exercices</a>';
             }
             
-            // Ajouter le lien pour le corrigé si l'option est activée
             if (chapitre.afficherCorrige) {
-                innerHTML += ' | <a href="corrige.pdf" class="file-link" target="_blank">Corrigé</a>';
-            }
-
-            // Bloc memes (si défini et non vide)
-            if (chapitre.memes && chapitre.memes.length > 0) {
-                innerHTML += ' | ' + `
-                    <span class="toggle-meme">Complément</span>
-                    <ul class="meme-list">`;
-                chapitre.memes.forEach(meme => {
-                    innerHTML += `<li><a href="${meme.url}" target="_blank">${meme.label}</a></li>`;
-                });
-                innerHTML += `</ul>`;
+                innerHTML += ' | <a href="corrige.pdf" target="_blank">Corrigé</a>';
             }
             
             li.innerHTML = innerHTML;
+            
+            // Bloc memes (DOM séparé pour éviter HTML bancal)
+            if (chapitre.memes && chapitre.memes.length > 0) {
+                const toggle = document.createElement('span');
+                toggle.className = "toggle-meme";
+                toggle.textContent = "Complément";
+                
+                const memeList = document.createElement('ul');
+                memeList.className = "meme-list";
+                
+                chapitre.memes.forEach(meme => {
+                    const liMeme = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = meme.url;
+                    a.target = "_blank";
+                    a.textContent = meme.label;
+                    liMeme.appendChild(a);
+                    memeList.appendChild(liMeme);
+                });
+                
+                li.appendChild(document.createTextNode(" | "));
+                li.appendChild(toggle);
+                li.appendChild(memeList);
+                
+                // toggle l’affichage
+                toggle.addEventListener('click', () => {
+                    memeList.classList.toggle('open');
+                });
+            }
+            
             ul.appendChild(li);
         }
     });
-
-    // Brancher les événements de toggle après génération
-    document.querySelectorAll('.toggle-meme').forEach(el => {
-        el.addEventListener('click', () => {
-            const list = el.nextElementSibling;
-            list.classList.toggle('open');
-        });
-    });
-
 }
 
 // Appeler la fonction pour générer les chapitres au chargement du document
