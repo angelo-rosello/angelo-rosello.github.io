@@ -4,7 +4,7 @@
 const chapitres = [
     {
         numero: 1,
-        nom: "Logique, symbole, raisonnement",
+        nom: "Logique et raisonnement",
         visible: true,
         afficherComplet: true,
         afficherCorrige: true,
