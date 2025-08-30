@@ -1,5 +1,4 @@
-/* styles.css*/
-/* V3 /*
+/* styles.css */
 
 /* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -130,7 +129,7 @@ footer {
     color: #fff;
 }
 
-/* Style du texte "contact" */
+/* Contact */
 .contact-info {
     font-style: normal;
     font-size: 0.8rem;
@@ -138,7 +137,7 @@ footer {
     margin-left: 50px;
 }
 
-/* Style de la page d'accueil (image et texte) */
+/* Page d'accueil */
 .intro {
     display: flex;
     align-items: center;
@@ -153,7 +152,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles pour les entrées de texte et les boutons */
+/* Inputs */
 input[type="password"], input[type="text"], input[type="email"] {
     padding: 10px;
     font-size: 16px;
@@ -169,6 +168,7 @@ input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focu
     border-color: #2C3E50;
 }
 
+/* Buttons */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -184,26 +184,23 @@ button:hover {
     background-color: #8FB9A8;
 }
 
-/* Animations fade-in et fade-out */
+/* Animations */
 .fade-in { opacity: 0; animation: fadeIn 0.5s ease-in forwards; }
-.fade-out { animation: fadeOut 0.5s ease-out forwards; }
-
 @keyframes fadeIn { to { opacity: 1; } }
+
+.fade-out { animation: fadeOut 0.5s ease-out forwards; }
 @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
 
-/* Animation zoom-in */
 @keyframes zoomIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
 .animate-zoomIn { opacity: 0; animation: zoomIn 1s forwards; animation-delay: 0.3s; }
 .animate-zoomIn-slow { opacity: 0; animation: zoomIn 1s forwards; animation-delay: 0.8s; }
 
-/* Animation shake */
-@keyframes shake { 0%,100%{transform:translateX(0);} 25%{transform:translateX(-5px);} 50%{transform:translateX(5px);} 75%{transform:translateX(-5px);} }
+@keyframes shake { 0%,100% {transform: translateX(0);} 25%{transform: translateX(-5px);}50%{transform: translateX(5px);}75%{transform: translateX(-5px);} }
 .shake { animation: shake 0.5s; }
 
-/* Style pour l'image du garde */
 .guard-image { width: 67px; height: 65px; display: inline-block; }
 
-/* Styles réactifs pour mobile */
+/* Responsive */
 @media (max-width: 768px) {
     nav ul { text-align: center; padding: 0 10px; }
     nav ul li { display: block; margin: 10px 0; }
@@ -213,40 +210,41 @@ button:hover {
     .contact-info { text-align: center; margin-left: 0; }
 }
 
-/* Liste de memes en accordéon - affichage horizontal avec underline animée et encadré */
+/* Meme-list horizontal et masquée */
 .meme-list {
+  display: block;               /* block parent pour encadré */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  list-style: none;
-  padding: 10px;
+  padding: 5px;
   margin-top: 5px;
   border: 1px dashed #8FB9A8;
   border-radius: 5px;
 }
 
 .meme-list.open {
-  max-height: 500px;
+  max-height: 300px;            /* suffisant pour contenir les liens */
 }
 
 .meme-list .meme-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* espacement horizontal et vertical */
+  gap: 10px;                   /* espace horizontal et vertical */
 }
 
-.meme-list li {
+.meme-list .meme-container li {
+  list-style: none;
   margin: 0;
 }
 
-.meme-list li a {
+.meme-list .meme-container li a {
   color: #0066cc;
   text-decoration: none;
   position: relative;
   transition: color 0.3s;
 }
 
-.meme-list li a:after {
+.meme-list .meme-container li a:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -259,12 +257,11 @@ button:hover {
   transition: transform 0.3s ease-out;
 }
 
-.meme-list li a:hover {
+.meme-list .meme-container li a:hover {
   color: #8FB9A8;
 }
 
-.meme-list li a:hover:after {
+.meme-list .meme-container li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
