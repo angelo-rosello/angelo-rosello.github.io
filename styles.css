@@ -373,6 +373,6 @@ button:hover {
     height: 14px;
     vertical-align: middle;
     margin-right: 4px;     /* petit espace entre icône et texte */
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     fill: currentColor;    /* prend la couleur du texte */
 }
