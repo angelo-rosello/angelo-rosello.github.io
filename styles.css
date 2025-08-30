@@ -312,10 +312,12 @@ button:hover {
   margin: 4px 0;
 }
 .toggle-meme {
-  margin-left: 10px;
-  font-size: 0.9em;
+  color: #0645AD;           /* bleu standard */
+  text-decoration: underline;
   cursor: pointer;
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  padding: 2px 6px;
+  margin-left: 10px;
 }
+.toggle-meme:hover {
+  color: #0B0080;           /* foncé au survol */
+}
+
