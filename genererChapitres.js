@@ -180,7 +180,6 @@ function genererChapitres() {
             
             // Bloc memes (DOM séparé pour éviter HTML bancal)
             if (chapitre.memes && chapitre.memes.length > 0) {
-                innterHTML += '<br>';
                 const toggle = document.createElement('span');
                 toggle.className = "toggle-meme";
                 toggle.textContent = "Complément";
@@ -204,9 +203,14 @@ function genererChapitres() {
                 memeList.appendChild(memeContainer); // <-- le conteneur dans la UL
 
                 
+                // Crée un conteneur bloc pour le toggle + memeList
+                const memeBlock = document.createElement('div');
+                memeBlock.style.display = 'block';
+                memeBlock.appendChild(toggle);
+                memeBlock.appendChild(memeList);
+                
                 li.appendChild(document.createTextNode(" | "));
-                li.appendChild(toggle);
-                li.appendChild(memeList);
+                li.appendChild(memeBlock);
                 
                 // toggle l’affichage
                 toggle.addEventListener('click', () => {
