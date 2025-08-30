@@ -123,8 +123,8 @@ function genererChapitres() {
 
             // Bloc memes (si défini et non vide)
             if (chapitre.memes && chapitre.memes.length > 0) {
-                innerHTML += `
-                    <span class="toggle-meme">Ressources complémentaires</span>
+                innerHTML += ` | 
+                    <span class="toggle-meme">Complément</span>
                     <ul class="meme-list">`;
                 chapitre.memes.forEach(meme => {
                     innerHTML += `<li><a href="${meme.url}" target="_blank">${meme.label}</a></li>`;
