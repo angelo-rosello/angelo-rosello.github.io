@@ -66,14 +66,14 @@ nav ul li a:hover:after {
     transform-origin: bottom left;
 }
 
-/* Liens dans le corps de texte */
+/* Liens dans le corps de texte et toggle-meme */
 a,
 .toggle-meme {
     color: #0066cc;
     text-decoration: none;
     position: relative;
     transition: color 0.3s;
-    cursor: pointer; /* pour .toggle-meme uniquement, mais ça ne gêne pas les <a> */
+    cursor: pointer;
 }
 
 a:after,
@@ -100,8 +100,6 @@ a:hover:after,
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-
 
 /* Section principale */
 main {
@@ -134,7 +132,7 @@ footer {
 
 /* Style du texte "contact" */
 .contact-info {
-    font-style: none;
+    font-style: normal;
     font-size: 0.8rem;
     margin-top: 0px;
     margin-left: 50px;
@@ -155,25 +153,20 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 /* Styles pour les entrées de texte et les boutons */
-
-/* Styles pour les inputs */
 input[type="password"], input[type="text"], input[type="email"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    width: 200px; /* Largeur de l'input */
-    box-sizing: border-box; /* Inclure le padding dans la largeur */
+    width: 200px;
+    box-sizing: border-box;
     transition: border-color 0.3s;
 }
 
 input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focus {
-    border-color: #2C3E50; /* Couleur de la bordure au focus */
+    border-color: #2C3E50;
 }
 
 /* Styles pour les boutons */
@@ -181,7 +174,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #2C3E50; /* Même couleur que le header */
+    background-color: #2C3E50;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -189,9 +182,8 @@ button {
 }
 
 button:hover {
-    background-color: #8FB9A8; /* Couleur vert pastel */
+    background-color: #8FB9A8;
 }
-
 
 /* Animation fade-in */
 .fade-in {
@@ -205,8 +197,7 @@ button:hover {
     }
 }
 
-
-/* Animation de fade-out */
+/* Animation fade-out */
 .fade-out {
     animation: fadeOut 0.5s ease-out forwards;
 }
@@ -219,7 +210,6 @@ button:hover {
         opacity: 0;
     }
 }
-
 
 /* Animation zoom-in */
 @keyframes zoomIn {
@@ -261,9 +251,8 @@ button:hover {
 .guard-image {
     width: 67px;
     height: 65px;
-    display: inline-block; /* Assure que l'élément est visible */
+    display: inline-block;
 }
-
 
 /* Styles réactifs pour mobile */
 @media (max-width: 768px) {
@@ -290,9 +279,9 @@ button:hover {
     }
 
     .shadow-img {
-	max-height: 70%
+        max-height: 70%;
         max-width: 70%;
-	margin-top: 10px;
+        margin-top: 10px;
         margin-bottom: -20px;
     }
 
@@ -302,16 +291,21 @@ button:hover {
     }
 }
 
-
 /* Liste de memes en accordéon */
-
 .meme-list {
-  display: block;       /* reste block pour margin/padding */
-  max-height: 0;
+  display: block;
+  max-height: 0;           /* fermé par défaut */
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
 }
+
 .meme-list.open {
-  max-height: 400px;
+  max-height: 400px;       /* s'ouvre au clic */
 }
- 
+
+.meme-list li {
+  margin: 4px 0;
+}
