@@ -1,6 +1,6 @@
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [  
-    { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherComplet : false, afficherCorrige: false,
+    { numero: 1, nom: "Logique, symbole, raisonnement", visible: true, afficherComplet : true, afficherCorrige: true,
     memes: [
         { label: "Meme PNG", url: "memes/chapitre1/meme1.png" },
         { label: "TikTok drôle", url: "https://www.tiktok.com/..." }
