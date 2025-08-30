@@ -373,12 +373,6 @@ button:hover {
     height: 14px;
     vertical-align: middle;
     margin-right: 4px;     /* petit espace entre icône et texte */
-    margin-bottom: 4px ;
+    margin-bottom: 4px;
     fill: currentColor;    /* prend la couleur du texte */
-}
-
-.meme-list .meme-container li a {
-    display: inline-flex;
-    align-items: center; /* centre verticalement icône + texte */
-    gap: 4px; /* espace entre icône et texte */
 }
