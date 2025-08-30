@@ -67,14 +67,17 @@ nav ul li a:hover:after {
 }
 
 /* Liens dans le corps de texte */
-a {
+a,
+.toggle-meme {
     color: #0066cc;
     text-decoration: none;
     position: relative;
     transition: color 0.3s;
+    cursor: pointer; /* pour .toggle-meme uniquement, mais ça ne gêne pas les <a> */
 }
 
-a:after {
+a:after,
+.toggle-meme:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -87,14 +90,18 @@ a:after {
     transition: transform 0.3s ease-out;
 }
 
-a:hover {
+a:hover,
+.toggle-meme:hover {
     color: #8FB9A8;
 }
 
-a:hover:after {
+a:hover:after,
+.toggle-meme:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
 
 /* Section principale */
 main {
@@ -293,32 +300,5 @@ button:hover {
         text-align: center;
         margin-left: 0;
     }
-}
-
-/* Style pour les meme boxes à déplier */
-
-.meme-list {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  list-style: none;
-  padding-left: 15px;
-  margin-top: 5px;
-}
-.meme-list.open {
-  max-height: 400px; /* ajuste selon contenu */
-}
-.meme-list li {
-  margin: 4px 0;
-}
-
-.toggle-meme {
-  color: #0645AD;           /* bleu standard */
-  text-decoration: underline;
-  cursor: pointer;
-  margin-left: 10px;
-}
-.toggle-meme:hover {
-  color: #0B0080;           /* foncé au survol */
 }
 
