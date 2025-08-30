@@ -1,3 +1,4 @@
+// UPDATE 4
 // Fonction pour générer les éléments HTML pour chaque chapitre
 function genererChapitres() {
     const ul = document.querySelector('.chapitres ul');
