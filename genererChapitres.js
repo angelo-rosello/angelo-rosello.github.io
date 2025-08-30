@@ -1,4 +1,4 @@
-// UPDATE 11
+// UPDATE 12
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
@@ -350,7 +350,7 @@ function genererChapitres() {
                     a.target = "_blank";
                 
                     if (meme.url.includes("instagram.com")) {
-                        fetch('insta.svg')
+                        fetch('doc-eleves/insta.svg')
                             .then(response => response.text())
                             .then(svgText => {
                                 const span = document.createElement('span');
