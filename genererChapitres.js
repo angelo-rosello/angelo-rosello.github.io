@@ -164,7 +164,7 @@ const chapitres = [
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
-            { label: "Intégrer, c'est dur", url: "doc-eleves/memes/integration.png" },
+            { label: "C'est juste dériver à l'envers...", url: "doc-eleves/memes/integration.png" },
             { label: "Visualisation de l'IPP", url: "doc-eleves/memes/minecraft.png" },
             { label: "Ah sh$t, here we go again", url: "doc-eleves/memes/orange.png" },
             { label: "Exo bonus", url: "doc-eleves/memes/exo.png" }
