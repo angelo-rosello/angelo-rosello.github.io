@@ -180,6 +180,7 @@ function genererChapitres() {
             
             // Bloc memes (DOM séparé pour éviter HTML bancal)
             if (chapitre.memes && chapitre.memes.length > 0) {
+                innterHTML += '<br>';
                 const toggle = document.createElement('span');
                 toggle.className = "toggle-meme";
                 toggle.textContent = "Complément";
@@ -204,7 +205,6 @@ function genererChapitres() {
 
                 
                 li.appendChild(document.createTextNode(" | "));
-                li.appendChild(document.createElement('br')); // ← ajoute un saut de ligne
                 li.appendChild(toggle);
                 li.appendChild(memeList);
                 
