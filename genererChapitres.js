@@ -332,9 +332,22 @@ function genererChapitres() {
 
             // Bloc memes
             if (chapitre.memes && chapitre.memes.length > 0) {
+
                 const toggle = document.createElement('span');
                 toggle.className = "toggle-meme";
-                toggle.textContent = "Complément";
+                toggle.innerHTML = 'Complément <span class="triangle">▼</span>'; // triangle vers le bas par défaut
+                
+                toggle.addEventListener('click', () => {
+                    memeList.classList.toggle('open');
+                
+                    // changer le triangle selon l'état
+                    const triangle = toggle.querySelector('.triangle');
+                    if (memeList.classList.contains('open')) {
+                        triangle.textContent = '▲';
+                    } else {
+                        triangle.textContent = '▼';
+                    }
+                });
 
                 const memeList = document.createElement('ul');
                 memeList.className = "meme-list";
@@ -349,14 +362,14 @@ function genererChapitres() {
                     a.target = "_blank";
                     a.textContent = meme.label;
                     liMeme.appendChild(a);
-
-                    // ajoute un point noir entre les liens sauf le dernier
+                
+                    // ajouter un point noir uniquement entre les liens (pas après le dernier)
                     if (index < chapitre.memes.length - 1) {
                         const sep = document.createElement('span');
                         sep.textContent = ' • ';
                         liMeme.appendChild(sep);
                     }
-
+                
                     memeContainer.appendChild(liMeme);
                 });
 
