@@ -74,7 +74,7 @@ const chapitres = [
         afficherCorrige: false,
         memes: [
             { label: "Bienvenue dans le vrai monde", url: "https://www.instagram.com/reel/DC1RmQyIQgH/?utm_source=ig_web_copy_link&igsh=aGdvb21keDk3N2Fo" },
-            { label: "'c'EsT uNe FoRmE iNdEtErMiNeE", url: "https://www.instagram.com/reel/DE2N3bVM621/?utm_source=ig_web_copy_link&igsh=YmthaXRxbTR4OXl3" }
+            { label: "c'EsT uNe FoRmE iNdEtErMiNeE", url: "https://www.instagram.com/reel/DE2N3bVM621/?utm_source=ig_web_copy_link&igsh=YmthaXRxbTR4OXl3" }
         ]
     },
     {
@@ -145,7 +145,7 @@ const chapitres = [
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
-            { label: "No better answer", url: "https://www.instagram.com/reel/DFoQFXUz8dX/?utm_source=ig_web_copy_link&igsh=OTExZjJ1dGVvbHFu" },
+            { label: "No better answer", url: "doc-eleves/memes/tweet.png" },
             { label: "Un grand classique", url: "doc-eleves/memes/luigi.png" }
         ]
     },
