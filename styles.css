@@ -66,9 +66,8 @@ nav ul li a:hover:after {
     transform-origin: bottom left;
 }
 
-/* Liens dans le corps de texte et toggle-meme */
-a,
-.toggle-meme {
+/* Liens dans le corps de texte */
+a {
     color: #0066cc;
     text-decoration: none;
     position: relative;
@@ -76,8 +75,7 @@ a,
     cursor: pointer;
 }
 
-a:after,
-.toggle-meme:after {
+a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -90,23 +88,36 @@ a:after,
     transition: transform 0.3s ease-out;
 }
 
-a:hover,
-.toggle-meme:hover {
+a:hover {
     color: #8FB9A8;
 }
 
-a:hover:after,
-.toggle-meme:hover:after {
+a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-/* --- Triangle pour "Complément" --- */
+/* Bouton "Complément" */
+.toggle-meme {
+    color: #0066cc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.toggle-meme:hover {
+    color: #8FB9A8;
+}
+
+/* Triangle visible en permanence */
 .toggle-meme::after {
     content: " ▼";
     font-size: 0.8em;
     margin-left: 4px;
-    transition: transform 0.2s;
+    display: inline;
+    position: static;
+    background: none;
+    width: auto;
+    height: auto;
 }
 
 .toggle-meme.open::after {
@@ -293,7 +304,7 @@ button:hover {
 
 /* Liste de memes en accordéon - affichage horizontal, rectangle adaptatif */
 .meme-list {
-  display: none;               /* complètement masqué quand fermé */
+  display: none;
   padding: 5px 10px;
   margin-top: 5px;
   border: 1px dashed #8FB9A8;
@@ -301,10 +312,10 @@ button:hover {
 }
 
 .meme-list.open {
-  display: inline-flex;        /* s'adapte automatiquement au contenu */
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-direction: row;         /* s’assure que les liens sont horizontaux */
+  flex-direction: row;
 }
 
 /* conteneur flex pour les liens */
