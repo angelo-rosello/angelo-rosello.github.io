@@ -369,17 +369,9 @@ button:hover {
 
 /* Icône Instagram à côté des liens Instagram */
 .meme-list .meme-container li a .insta-icon {
-    width: 13px;
-    height: 13px;
-    margin-right: 4px;
-    vertical-align: text-bottom;
-
-    /* Filtre pour couleur identique au texte normal */
-    filter: invert(28%) sepia(86%) saturate(465%) hue-rotate(180deg) brightness(94%) contrast(90%);
-    transition: filter 0.3s;
-}
-
-.meme-list .meme-container li a:hover .insta-icon {
-    /* Même filtre que le hover du texte */
-    filter: invert(39%) sepia(58%) saturate(520%) hue-rotate(160deg) brightness(85%) contrast(90%);
+    width: 14px;           /* taille adaptée au texte */
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 4px;     /* petit espace entre icône et texte */
+    fill: currentColor;    /* prend la couleur du texte */
 }
