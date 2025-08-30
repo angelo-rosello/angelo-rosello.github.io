@@ -59,7 +59,7 @@ const chapitres = [
     },
     { numero: 11, nom: "Espaces probabilisés finis", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
-        {label: "Enfin une application concrète", url = "doc-eleves/memes/bayes.png"}
+        {label: "Enfin une application concrète", url : "doc-eleves/memes/bayes.png"}
     ]
     },
     { numero: 12, nom: "Systèmes linéaires", visible: true,  afficherComplet : false, afficherCorrige: false,
@@ -68,7 +68,7 @@ const chapitres = [
     { numero: 13, nom: "Dérivation", visible: true,  afficherComplet : false, afficherCorrige: false,
     memes: [
         {label: "Bro can handle it", url : "https://www.instagram.com/reel/DFoQFXUz8dX/?utm_source=ig_web_copy_link&igsh=OTExZjJ1dGVvbHFu"},
-        {label: "Coup dur", url : "https://www.instagram.com/reel/DFabKTpOoid/?utm_source=ig_web_copy_link&igsh=MTJoend3Zno1eTVlOA=="},
+        {label: "Coup dur", url : "https://www.instagram.com/reel/DFabKTpOoid/?utm_source=ig_web_copy_link&igsh=MTJoend3Zno1eTVlOA=="}
     ]
     },
     { numero: 14, nom: "Matrices", visible: true,  afficherComplet : false, afficherCorrige: false,
