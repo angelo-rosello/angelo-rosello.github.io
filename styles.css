@@ -1,4 +1,4 @@
-/* styles.css V5 */
+/* styles.css V6 */
 
 /* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -111,8 +111,8 @@ a:hover:after {
 /* Triangle visible en permanence */
 .toggle-meme::after {
     content: " ▼";
-    font-size: 0.8em;
-    margin-left: 4px;
+    font-size: 0.6em;
+    margin-left: 2px;
     display: inline;
     position: static;
     background: none;
