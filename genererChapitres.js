@@ -109,7 +109,7 @@ function genererChapitres() {
             
             // Bloc principal (poly, cours, corrigé)
             let innerHTML = `
-                Chap.${chapitre.numero} (${chapitre.nom}) :
+                Chap. ${chapitre.numero} (${chapitre.nom}) :
                 <a href="vierge.pdf" class="file-link" target="_blank">Poly vierge</a>`;
             
             if (chapitre.afficherComplet) {
