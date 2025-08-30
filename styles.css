@@ -302,3 +302,16 @@ button:hover {
     }
 }
 
+
+/* Liste de memes en accordéon */
+
+.meme-list {
+  display: block;       /* reste block pour margin/padding */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.meme-list.open {
+  max-height: 400px;
+}
+
