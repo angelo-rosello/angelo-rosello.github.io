@@ -292,19 +292,29 @@ button:hover {
   display: inline-flex;        /* s'adapte automatiquement au contenu */
   flex-wrap: wrap;
   gap: 30px;
+  flex-direction: row;         /* s’assure que les liens sont horizontaux */
 }
 
+/* conteneur flex pour les liens */
 .meme-list .meme-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
+/* chaque lien de la liste */
 .meme-list .meme-container li {
   list-style: none;
   margin: 0;
 }
 
+/* point séparateur avant chaque lien sauf le premier */
+.meme-list .meme-container li + li::before {
+  content: " • "; 
+  margin: 0 5px;
+}
+
+/* style des liens */
 .meme-list .meme-container li a {
   color: #0066cc;
   text-decoration: none;
