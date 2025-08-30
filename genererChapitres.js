@@ -131,6 +131,9 @@ function genererChapitres() {
                 const memeList = document.createElement('ul');
                 memeList.className = "meme-list";
                 
+                const memeContainer = document.createElement('div'); // <-- conteneur flex
+                memeContainer.className = 'meme-container';
+                
                 chapitre.memes.forEach(meme => {
                     const liMeme = document.createElement('li');
                     const a = document.createElement('a');
@@ -138,8 +141,11 @@ function genererChapitres() {
                     a.target = "_blank";
                     a.textContent = meme.label;
                     liMeme.appendChild(a);
-                    memeList.appendChild(liMeme);
+                    memeContainer.appendChild(liMeme); // <-- ajout au conteneur, pas à la UL
                 });
+                
+                memeList.appendChild(memeContainer); // <-- le conteneur dans la UL
+
                 
                 li.appendChild(document.createTextNode(" | "));
                 li.appendChild(toggle);
