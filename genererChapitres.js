@@ -349,20 +349,23 @@ function genererChapitres() {
                     a.href = meme.url;
                     a.target = "_blank";
                 
-                    // Ajouter l'icône Instagram avant le texte si c'est un lien Insta
-                    if (meme.url.includes('instagram.com')) {
-                        const instaIcon = document.createElement('img');
-                        instaIcon.src = "doc-eleves/insta.png";  // chemin vers ton PNG
-                        instaIcon.className = "insta-icon";
-                        a.appendChild(instaIcon);
+                    if (meme.url.includes("instagram.com")) {
+                        fetch('insta.svg')
+                            .then(response => response.text())
+                            .then(svgText => {
+                                const span = document.createElement('span');
+                                span.innerHTML = svgText;
+                                const svg = span.querySelector('svg');
+                                svg.classList.add('insta-icon');
+                                a.prepend(svg); // icône avant le texte
+                            });
                     }
                 
-                    // Ajouter le texte après l’icône
-                    a.appendChild(document.createTextNode(meme.label));
-                
+                    a.append(meme.label);
                     liMeme.appendChild(a);
                     memeContainer.appendChild(liMeme);
                 });
+
             
                 memeList.appendChild(memeContainer);
             
