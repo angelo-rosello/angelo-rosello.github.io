@@ -1,4 +1,4 @@
-// UPDATE 14
+// UPDATE 15
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
@@ -310,10 +310,11 @@ function genererChapitres() {
 
     chapitres.forEach(chapitre => {
         if (chapitre.visible) {
-            let basePath = `doc-eleves/chapitre${chapitre.numero}/`;
-            const li = document.createElement('li');
+            const li = document.createElement('li'); // ← création
             li.setAttribute('data-visible', 'true');
             li.setAttribute('data-folder', `chapitre${chapitre.numero}`);
+
+            let basePath = `doc-eleves/chapitre${chapitre.numero}/`;
 
             // Bloc principal (poly, cours, corrigé)
             let innerHTML = `
@@ -321,35 +322,34 @@ function genererChapitres() {
                 <a href="${basePath}vierge.pdf" class="file-link" target="_blank">Poly vierge</a>`;
 
             if (chapitre.afficherComplet) {
-                innerHTML += ' | <a href="${basePath}cours.pdf" target="_blank">Cours complet</a> | <a href="${basePath}exercices.pdf" target="_blank">Exercices</a>';
+                innerHTML += ` | <a href="${basePath}cours.pdf" target="_blank">Cours complet</a>
+                               | <a href="${basePath}exercices.pdf" target="_blank">Exercices</a>`;
             }
 
             if (chapitre.afficherCorrige) {
-                innerHTML += ' | <a href="${basePath}corrige.pdf" target="_blank">Corrigé</a>';
+                innerHTML += ` | <a href="${basePath}corrige.pdf" target="_blank">Corrigé</a>`;
             }
 
             li.innerHTML = innerHTML;
 
-            // Bloc memes
-            if (chapitre.afficherComplet && chapitre.memes && chapitre.memes.length > 0) {
-            
-                // Bouton "Complément" (triangle géré uniquement en CSS avec .open)
+            // Bloc memes (⚠ tu avais mis afficherComplet en condition)
+            if (chapitre.memes && chapitre.memes.length > 0) {
                 const toggle = document.createElement('span');
                 toggle.className = "toggle-meme";
-                toggle.textContent = '+'; // 'Complément';
-            
+                toggle.textContent = '+';
+
                 const memeList = document.createElement('ul');
                 memeList.className = "meme-list";
-            
+
                 const memeContainer = document.createElement('div');
                 memeContainer.className = 'meme-container';
-            
+
                 chapitre.memes.forEach(meme => {
                     const liMeme = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = meme.url;
                     a.target = "_blank";
-                
+
                     if (meme.url.includes("instagram.com")) {
                         fetch('doc-eleves/insta.svg')
                             .then(response => response.text())
@@ -358,39 +358,36 @@ function genererChapitres() {
                                 span.innerHTML = svgText;
                                 const svg = span.querySelector('svg');
                                 svg.classList.add('insta-icon');
-                                a.prepend(svg); // icône avant le texte
+                                a.prepend(svg);
                             });
                     }
-                
+
                     a.append(meme.label);
                     liMeme.appendChild(a);
                     memeContainer.appendChild(liMeme);
                 });
 
-            
                 memeList.appendChild(memeContainer);
-            
-                // bloc séparé pour forcer le retour à la ligne
+
                 const memeBlock = document.createElement('div');
                 memeBlock.style.display = 'block';
                 memeBlock.appendChild(memeList);
-            
+
                 li.appendChild(document.createTextNode(" | "));
                 li.appendChild(toggle);
                 li.appendChild(memeBlock);
-            
-                // toggle l’affichage
+
                 toggle.addEventListener('click', () => {
                     memeList.classList.toggle('open');
-                    toggle.classList.toggle('open'); // pour la flèche CSS
+                    toggle.classList.toggle('open');
                 });
             }
-
 
             ul.appendChild(li);
         }
     });
 }
+
 
 // Appeler la fonction pour générer les chapitres au chargement du document
 document.addEventListener("DOMContentLoaded", function() {
