@@ -310,21 +310,21 @@ function genererChapitres() {
 
     chapitres.forEach(chapitre => {
         if (chapitre.visible) {
-            const li = document.createElement('li');
+            let basePath = `doc-eleves/chapitre${chapitre.numero}/`;
             li.setAttribute('data-visible', 'true');
             li.setAttribute('data-folder', `chapitre${chapitre.numero}`);
 
             // Bloc principal (poly, cours, corrigé)
             let innerHTML = `
                 Chap. ${chapitre.numero} (${chapitre.nom}) :
-                <a href="vierge.pdf" class="file-link" target="_blank">Poly vierge</a>`;
+                <a href="${basePath}vierge.pdf" class="file-link" target="_blank">Poly vierge</a>`;
 
             if (chapitre.afficherComplet) {
-                innerHTML += ' | <a href="cours.pdf" target="_blank">Cours complet</a> | <a href="exercices.pdf" target="_blank">Exercices</a>';
+                innerHTML += ' | <a href="${basePath}cours.pdf" target="_blank">Cours complet</a> | <a href="${basePath}exercices.pdf" target="_blank">Exercices</a>';
             }
 
             if (chapitre.afficherCorrige) {
-                innerHTML += ' | <a href="corrige.pdf" target="_blank">Corrigé</a>';
+                innerHTML += ' | <a href="${basePath}corrige.pdf" target="_blank">Corrigé</a>';
             }
 
             li.innerHTML = innerHTML;
