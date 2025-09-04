@@ -1,4 +1,4 @@
-// UPDATE 15
+// UPDATE 16
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
@@ -319,7 +319,7 @@ function genererChapitres() {
             // Bloc principal (poly, cours, corrigé)
             let innerHTML = `
                 Chap. ${chapitre.numero} (${chapitre.nom}) :
-                <a href="${basePath}vierge.pdf" class="file-link" target="_blank">Poly vierge</a>`;
+                <a href="${basePath}vierge.pdf" target="_blank">Poly vierge</a>`;
 
             if (chapitre.afficherComplet) {
                 innerHTML += ` | <a href="${basePath}cours.pdf" target="_blank">Cours complet</a>
