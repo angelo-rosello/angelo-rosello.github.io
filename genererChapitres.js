@@ -311,6 +311,7 @@ function genererChapitres() {
     chapitres.forEach(chapitre => {
         if (chapitre.visible) {
             let basePath = `doc-eleves/chapitre${chapitre.numero}/`;
+            const li = document.createElement('li');
             li.setAttribute('data-visible', 'true');
             li.setAttribute('data-folder', `chapitre${chapitre.numero}`);
 
