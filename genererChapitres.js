@@ -17,7 +17,7 @@ const chapitres = [
     {
         numero: 2,
         nom: "Somme et produits",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
