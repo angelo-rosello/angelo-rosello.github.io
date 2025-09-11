@@ -2,7 +2,7 @@
 
 const tps = [
     { numero: 1, nom: "D&eacutecouverte de Python ", visible: true },
-    { numero: 2, nom : "numpy et fonctions", visible: false },
+    { numero: 2, nom : "numpy et fonctions", visible: true },
     { numero: 3, nom : "Listes, boucles for", visible: false },
     { numero: 4, nom : "Boucle for : sommes et produits", visible: false },
     { numero: 5, nom : "Etude de suites réelles - part. 1", visible: false },
