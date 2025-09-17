@@ -19,7 +19,7 @@ const chapitres = [
         nom: "Somme et produits",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Par pitié", url: "doc-eleves/memes/sum.png" }
         ]
@@ -27,8 +27,8 @@ const chapitres = [
     {
         numero: 3,
         nom: "Applications",
-        visible: false,
-        afficherComplet: false,
+        visible: true,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Motivational speech", url: "https://www.instagram.com/reel/DHdw7kAyLbJ/?utm_source=ig_web_copy_link&igsh=b3cybWRrN3hvcWhr" }
