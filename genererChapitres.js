@@ -37,7 +37,7 @@ const chapitres = [
     {
         numero: 4,
         nom: "Réels, fonctions numériques",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
