@@ -74,6 +74,7 @@ const chapitres = [
         afficherCorrige: false,
         memes: [
             { label: "Bienvenue dans le vrai monde", url: "https://www.instagram.com/reel/DC1RmQyIQgH/?utm_source=ig_web_copy_link&igsh=aGdvb21keDk3N2Fo" },
+            { label: "Négation de quantificateurs", url: "https://www.instagram.com/reel/DPB660aCXrO/?utm_source=ig_web_copy_link&igsh=MWozN3F5djdnMzd5YQ==" },
             { label: "c'EsT uNe FoRmE iNdEtErMiNeE", url: "https://www.instagram.com/reel/DE2N3bVM621/?utm_source=ig_web_copy_link&igsh=YmthaXRxbTR4OXl3" }
         ]
     },
