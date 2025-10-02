@@ -47,8 +47,8 @@ const chapitres = [
     {
         numero: 5,
         nom: "Suites réelles",
-        visible: false,
-        afficherComplet: false,
+        visible: true,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DCJg7sjsnIJ/?utm_source=ig_web_copy_link&igsh=NXdma2xmdXMyY3M0" }
