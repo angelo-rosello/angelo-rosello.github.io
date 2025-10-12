@@ -69,7 +69,7 @@ const chapitres = [
     {
         numero: 7,
         nom: "Limites de suites",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
