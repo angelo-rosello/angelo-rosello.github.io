@@ -59,7 +59,7 @@ const chapitres = [
         nom: "Polynômes",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Dosez", url: "doc-eleves/memes/cuillere.png" },
             { label: "Racine évidente", url: "https://www.instagram.com/reel/DJl5PbPM8fz/?utm_source=ig_web_copy_link&igsh=dGNlZnJ4N3FoM2V0" },
