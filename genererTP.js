@@ -7,7 +7,7 @@ const tps = [
     { numero: 4, nom : "Listes, boucles for", visible: true },
     { numero: 5, nom : "Boucle for : sommes et produits", visible: true },
     { numero: 6, nom : "Etude de suites réelles - part. 1", visible: true },
-    { numero: 7, nom : "Etude de suites réelles - part. 2", visible: false },
+    { numero: 7, nom : "Etude de suites réelles - part. 2", visible: true },
     { numero: 7.5, nom : "Structures conditionnelles", visible: false },
     { numero: 8, nom : "Boucle While", visible: false },
     { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: false },
