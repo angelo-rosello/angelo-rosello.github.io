@@ -70,8 +70,8 @@ const chapitres = [
         numero: 7,
         nom: "Limites de suites",
         visible: true,
-        afficherComplet: false,
-        afficherCorrige: false,
+        afficherComplet: true,
+        afficherCorrige: true,
         memes: [
             { label: "Bienvenue dans le vrai monde", url: "https://www.instagram.com/reel/DC1RmQyIQgH/?utm_source=ig_web_copy_link&igsh=aGdvb21keDk3N2Fo" },
             { label: "Négation de quantificateurs", url: "https://www.instagram.com/reel/DPB660aCXrO/?utm_source=ig_web_copy_link&igsh=MWozN3F5djdnMzd5YQ==" },
@@ -81,8 +81,8 @@ const chapitres = [
     {
         numero: 8,
         nom: "Dénombrement",
-        visible: false,
-        afficherComplet: false,
+        visible: true,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "LVB español", url: "doc-eleves/memes/espanol.png" }
