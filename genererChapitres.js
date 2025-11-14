@@ -63,7 +63,7 @@ const chapitres = [
         memes: [
             { label: "Dosez", url: "doc-eleves/memes/cuillere.png" },
             { label: "Racine évidente", url: "https://www.instagram.com/reel/DJl5PbPM8fz/?utm_source=ig_web_copy_link&igsh=dGNlZnJ4N3FoM2V0" },
-            { label: "(seulement pour les polynôme unitaires)", url: "https://www.instagram.com/reel/DBrPbFdtuWs/?utm_source=ig_web_copy_link&igsh=MWl4cTRqMDJpM3ZnZw==" }
+            { label: "(seulement pour les polynôme unitaires)", url: "https://www.instagram.com/reel/DBrPbFdtuWs/?utm_source=ig_web_copy_link&igsh=MWl4cTRqMDJpM3ZnZw==" },
             { label: "Degré moins l'infini", url: "https://www.instagram.com/reel/DQHgFJYCUti/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }
         ]
     },
