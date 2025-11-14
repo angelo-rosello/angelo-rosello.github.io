@@ -64,6 +64,7 @@ const chapitres = [
             { label: "Dosez", url: "doc-eleves/memes/cuillere.png" },
             { label: "Racine évidente", url: "https://www.instagram.com/reel/DJl5PbPM8fz/?utm_source=ig_web_copy_link&igsh=dGNlZnJ4N3FoM2V0" },
             { label: "(seulement pour les polynôme unitaires)", url: "https://www.instagram.com/reel/DBrPbFdtuWs/?utm_source=ig_web_copy_link&igsh=MWl4cTRqMDJpM3ZnZw==" }
+            { label: "Degré moins l'infini", url: "https://www.instagram.com/reel/DQHgFJYCUti/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }
         ]
     },
     {
@@ -136,6 +137,7 @@ const chapitres = [
         afficherCorrige: false,
         memes: [
             { label: "Bro can handle it", url: "https://www.instagram.com/reel/DFoQFXUz8dX/?utm_source=ig_web_copy_link&igsh=OTExZjJ1dGVvbHFu" },
+            { label: "Dérivable implique continu", url: "https://www.instagram.com/reel/DP8luEBib9q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
             { label: "Toboggan affine par morceaux", url: "https://www.instagram.com/reel/DFabKTpOoid/?utm_source=ig_web_copy_link&igsh=MTJoend3Zno1eTVlOA==" }
         ]
     },
@@ -156,7 +158,9 @@ const chapitres = [
         visible: false,
         afficherComplet: false,
         afficherCorrige: false,
-        memes: []
+        memes: [
+            { label: "Hors sujet mais j'arrondis mes fins de mois", url: "https://www.instagram.com/reel/DPhEc0YCbvI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+        ]
     },
     {
         numero: 16,
@@ -178,7 +182,8 @@ const chapitres = [
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
-            { label: "Souvent dur à encaisser, ce chapitre", url: "doc-eleves/memes/shrek.png" }
+            { label: "Souvent dur à encaisser, ce chapitre", url: "doc-eleves/memes/shrek.png" },
+            { label: "Paul Eluard serait fier", url: "https://www.instagram.com/reel/DQzAYC1CcdF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }
         ]
     },
     {
@@ -300,7 +305,10 @@ const chapitres = [
     visible: false,
     afficherComplet: false,
     afficherCorrige: false,
-    memes: []
+    memes: [
+        {label: "Bien pratique cette inégalité", url: "https://www.instagram.com/reel/DM3Z1mLAUg-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="},
+        {label: "New LV2 unlocked", url: "https://www.instagram.com/reel/DOgbAYziMiF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="}
+    ]
 }
     
 ];
