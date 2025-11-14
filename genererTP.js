@@ -9,7 +9,7 @@ const tps = [
     { numero: 6, nom : "Etude de suites réelles - part. 1", visible: true },
     { numero: 7, nom : "Etude de suites réelles - part. 2", visible: true },
     { numero: 8, nom : "Boucle While", visible: true },
-    { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: false },
+    { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: true },
     { numero: 10, nom : "Vecteurs - Partie I", visible: false },
     { numero: 11, nom : "Vecteurs - Partie II", visible: false },
     { numero: "révisions1",  nom : "Corrigé", visible: false },
