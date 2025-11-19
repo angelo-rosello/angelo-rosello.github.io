@@ -118,7 +118,7 @@ const chapitres = [
         afficherComplet: true,
         afficherCorrige: false,
         memes: [
-            { label: "Enfin une application concrète", url: "doc-eleves/memes/bayes.png" }
+            { label: "Enfin une application concrète (P(A|B) est une proba conditionnelle) ", url: "doc-eleves/memes/bayes.png" }
         ]
     },
     {
