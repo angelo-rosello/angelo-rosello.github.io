@@ -106,7 +106,7 @@ const chapitres = [
         nom: "Continuité",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "L'essence du TVI", url: "doc-eleves/memes/tvi.png" }
         ]
@@ -114,8 +114,8 @@ const chapitres = [
     {
         numero: 11,
         nom: "Espaces probabilisés finis",
-        visible: false,
-        afficherComplet: false,
+        visible: true,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Enfin une application concrète", url: "doc-eleves/memes/bayes.png" }
