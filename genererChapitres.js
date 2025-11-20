@@ -124,7 +124,7 @@ const chapitres = [
     {
         numero: 12,
         nom: "Systèmes linéaires",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: []
