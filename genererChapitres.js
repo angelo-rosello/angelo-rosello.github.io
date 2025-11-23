@@ -116,7 +116,7 @@ const chapitres = [
         nom: "Espaces probabilisés finis",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Enfin une application concrète (P(A|B) est une proba conditionnelle) ", url: "doc-eleves/memes/bayes.png" }
         ]
