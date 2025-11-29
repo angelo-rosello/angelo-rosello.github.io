@@ -136,7 +136,6 @@ const chapitres = [
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
-            { label: "Bro can handle it", url: "https://www.instagram.com/reel/DFoQFXUz8dX/?utm_source=ig_web_copy_link&igsh=OTExZjJ1dGVvbHFu" },
             { label: "Dérivable implique continu", url: "https://www.instagram.com/reel/DP8luEBib9q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
             { label: "Toboggan affine par morceaux", url: "https://www.instagram.com/reel/DFabKTpOoid/?utm_source=ig_web_copy_link&igsh=MTJoend3Zno1eTVlOA==" }
         ]
