@@ -11,7 +11,7 @@ const tps = [
     { numero: 8, nom : "Boucle While", visible: true },
     { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: true },
     { numero: 10, nom : "Révisions et compléments (sommes et produits, while)", visible: true }, 
-    { numero: 10.5, nom : "Vecteurs - Partie I", visible: false },
+    { numero: 11, nom : "Vecteurs - Partie I", visible: true },
     { numero: 11, nom : "Vecteurs - Partie II", visible: false },
     { numero: "révisions1",  nom : "Corrigé", visible: false },
     { numero: 12, nom : "Matrices - Partie I", visible: false },
