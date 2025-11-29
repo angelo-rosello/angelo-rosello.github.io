@@ -132,7 +132,7 @@ const chapitres = [
     {
         numero: 13,
         nom: "Dérivation",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
