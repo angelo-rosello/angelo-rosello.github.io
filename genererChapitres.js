@@ -133,7 +133,7 @@ const chapitres = [
         numero: 13,
         nom: "Dérivation",
         visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Dérivable implique continu", url: "https://www.instagram.com/reel/DP8luEBib9q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
@@ -143,7 +143,7 @@ const chapitres = [
     {
         numero: 14,
         nom: "Matrices",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
