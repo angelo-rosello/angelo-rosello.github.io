@@ -134,7 +134,7 @@ const chapitres = [
         nom: "Dérivation",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Dérivable implique continu", url: "https://www.instagram.com/reel/DP8luEBib9q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
             { label: "Toboggan affine par morceaux", url: "https://www.instagram.com/reel/DFabKTpOoid/?utm_source=ig_web_copy_link&igsh=MTJoend3Zno1eTVlOA==" }
