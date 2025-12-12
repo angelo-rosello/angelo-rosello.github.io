@@ -12,7 +12,7 @@ const tps = [
     { numero: 9, nom : "Résolutions d'équations par dichotomie", visible: true },
     { numero: 10, nom : "Révisions et compléments (sommes et produits, while)", visible: true }, 
     { numero: 11, nom : "Vecteurs - Partie I", visible: true },
-    { numero: 11, nom : "Vecteurs - Partie II", visible: false },
+    { numero: 12, nom : "Vecteurs - Partie II", visible: true },
     { numero: "révisions1",  nom : "Corrigé", visible: false },
     { numero: 12, nom : "Matrices - Partie I", visible: false },
     { numero: 13, nom : "Matrices - Partie II", visible: false },
