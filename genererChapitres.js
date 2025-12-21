@@ -145,7 +145,7 @@ const chapitres = [
         nom: "Matrices",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "No better answer", url: "doc-eleves/memes/tweet.png" },
             { label: "Un grand classique", url: "doc-eleves/memes/luigi.png" }
