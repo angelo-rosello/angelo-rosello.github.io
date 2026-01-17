@@ -154,9 +154,9 @@ const chapitres = [
     {
         numero: 15,
         nom: "Variables aléatoires finies",
-        visible: false,
-        afficherComplet: false,
-        afficherCorrige: false,
+        visible: true,
+        afficherComplet: true,
+        afficherCorrige: true,
         memes: [
             { label: "Hors sujet mais j'arrondis mes fins de mois", url: "https://www.instagram.com/reel/DPhEc0YCbvI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
         ]
@@ -164,7 +164,7 @@ const chapitres = [
     {
         numero: 16,
         nom: "Intégration sur un segment",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
