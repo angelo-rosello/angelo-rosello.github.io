@@ -165,7 +165,7 @@ const chapitres = [
         numero: 16,
         nom: "Intégration sur un segment",
         visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "C'est juste dériver à l'envers...", url: "doc-eleves/memes/integration.png" },
@@ -177,7 +177,7 @@ const chapitres = [
     {
         numero: 17,
         nom: "Espaces vectoriels",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
