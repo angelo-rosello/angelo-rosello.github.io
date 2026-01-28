@@ -166,7 +166,7 @@ const chapitres = [
         nom: "Intégration sur un segment",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "C'est juste dériver à l'envers...", url: "doc-eleves/memes/integration.png" },
             { label: "Visualisation de l'IPP", url: "doc-eleves/memes/minecraft.png" },
