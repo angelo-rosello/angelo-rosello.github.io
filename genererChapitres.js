@@ -178,8 +178,8 @@ const chapitres = [
         numero: 17,
         nom: "Espaces vectoriels",
         visible: true,
-        afficherComplet: false,
-        afficherCorrige: false,
+        afficherComplet: true,
+        afficherCorrige: true,
         memes: [
             { label: "Souvent dur à encaisser, ce chapitre", url: "doc-eleves/memes/shrek.png" },
             { label: "Paul Eluard serait fier", url: "https://www.instagram.com/reel/DQzAYC1CcdF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }
@@ -188,7 +188,7 @@ const chapitres = [
     {
         numero: 18,
         nom: "Equivalence et négligeabilité",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
