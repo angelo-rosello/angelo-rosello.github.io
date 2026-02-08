@@ -17,7 +17,7 @@ const tps = [
     { numero: 14, nom : "Matrices - Partie II", visible: true },
     { numero: 15, nom : "Variables aléatoires - Partie I", visible: true },
     { numero: 16, nom : "Variables aléatoires - Partie II", visible: true },
-    { numero: 17, nom : "Conjecture de Syracuse", visible: false },
+    { numero: 17, nom : "Calcul d'intégrales", visible: true },
     { numero: 18, nom : "Variables aléatoires - Partie I", visible: false},
     { numero: 19, nom : "Illustrations sur les séries", visible: false} ,
     { numero: 20, nom : "Variables aléatoires - Partie II", visible: false}, 
