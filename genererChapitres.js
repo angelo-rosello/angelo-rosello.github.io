@@ -189,7 +189,7 @@ const chapitres = [
         numero: 18,
         nom: "Equivalence et négligeabilité",
         visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/Cy8sanCsXAb/?utm_source=ig_web_copy_link&igsh=MTlweTI2dHl3bXQyZQ==" }
@@ -199,7 +199,7 @@ const chapitres = [
     {
     numero: 19,
     nom: "Applications linéaires",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
