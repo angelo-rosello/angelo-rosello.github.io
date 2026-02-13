@@ -18,7 +18,7 @@ const tps = [
     { numero: 15, nom : "Variables aléatoires - Partie I", visible: true },
     { numero: 16, nom : "Variables aléatoires - Partie II", visible: true },
     { numero: 17, nom : "Calcul d'intégrales", visible: true },
-    { numero: 18, nom : "Variables aléatoires - Partie I", visible: false},
+    { numero: 18, nom : "Représentations graphiques - Partie I", visible: true},
     { numero: 19, nom : "Illustrations sur les séries", visible: false} ,
     { numero: 20, nom : "Variables aléatoires - Partie II", visible: false}, 
     { numero: 21, nom : "Expériences aléatoires", visible: false}, 
