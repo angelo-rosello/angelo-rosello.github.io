@@ -190,7 +190,7 @@ const chapitres = [
         nom: "Equivalence et négligeabilité",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/Cy8sanCsXAb/?utm_source=ig_web_copy_link&igsh=MTlweTI2dHl3bXQyZQ==" }
         ]
@@ -200,7 +200,7 @@ const chapitres = [
     numero: 19,
     nom: "Applications linéaires",
     visible: true,
-    afficherComplet: false,
+    afficherComplet: true,
     afficherCorrige: false,
     memes: [
         { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DFdUuKSokmo/?utm_source=ig_web_copy_link&igsh=MW8ycWM5bGhzMTZ3Yw==" }
@@ -209,7 +209,7 @@ const chapitres = [
 {
     numero: 20,
     nom: "Séries",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
