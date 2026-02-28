@@ -210,8 +210,8 @@ const chapitres = [
     numero: 20,
     nom: "Séries",
     visible: true,
-    afficherComplet: false,
-    afficherCorrige: false,
+    afficherComplet: true,
+    afficherCorrige: true,
     memes: [
         { label: "A vérifier en premier", url: "https://www.instagram.com/reel/C3N0Du0I821/?utm_source=ig_web_copy_link&igsh=ZjEyeXBnM3FueGlq" },
         { label: "Ref de 2014", url: "doc-eleves/memes/divergent.png" },
