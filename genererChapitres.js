@@ -201,7 +201,7 @@ const chapitres = [
     nom: "Applications linéaires",
     visible: true,
     afficherComplet: true,
-    afficherCorrige: false,
+    afficherCorrige: true,
     memes: [
         { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DFdUuKSokmo/?utm_source=ig_web_copy_link&igsh=MW8ycWM5bGhzMTZ3Yw==" }
     ]
@@ -221,7 +221,7 @@ const chapitres = [
 {
     numero: 21,
     nom: "Espaces probabilisés généraux",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
