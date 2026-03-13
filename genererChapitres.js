@@ -222,14 +222,14 @@ const chapitres = [
     numero: 21,
     nom: "Espaces probabilisés généraux",
     visible: true,
-    afficherComplet: false,
+    afficherComplet: true,
     afficherCorrige: false,
     memes: []
 },
 {
     numero: 22,
     nom: "Espaces vectoriels de dimension finie",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
