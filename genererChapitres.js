@@ -230,7 +230,7 @@ const chapitres = [
     numero: 22,
     nom: "Espaces vectoriels de dimension finie",
     visible: true,
-    afficherComplet: true,
+    afficherComplet: true, 
     afficherCorrige: false,
     memes: [
         { label: "Tout n'était qu'un rêve fiévreux", url: "https://www.instagram.com/reel/C_3yRbXMo8o/?utm_source=ig_web_copy_link&igsh=MW4wMmZsdHpkMHM5dg==" }
