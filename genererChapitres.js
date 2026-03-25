@@ -230,7 +230,7 @@ const chapitres = [
     numero: 22,
     nom: "Espaces vectoriels de dimension finie",
     visible: true,
-    afficherComplet: false,
+    afficherComplet: true,
     afficherCorrige: false,
     memes: [
         { label: "Tout n'était qu'un rêve fiévreux", url: "https://www.instagram.com/reel/C_3yRbXMo8o/?utm_source=ig_web_copy_link&igsh=MW4wMmZsdHpkMHM5dg==" }
@@ -239,7 +239,7 @@ const chapitres = [
 {
     numero: 23,
     nom: "Variables aléatoires discrètes",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
