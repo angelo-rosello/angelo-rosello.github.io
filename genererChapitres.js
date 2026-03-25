@@ -223,7 +223,7 @@ const chapitres = [
     nom: "Espaces probabilisés généraux",
     visible: true,
     afficherComplet: true,
-    afficherCorrige: false,
+    afficherCorrige: true,
     memes: []
 },
 {
