@@ -245,7 +245,7 @@ const chapitres = [
     memes: []
 },
 {
-    numero: 24,
+    numero: 24, 
     nom: "Somme de SEV",
     visible: true,
     afficherComplet: true,
