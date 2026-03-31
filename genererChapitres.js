@@ -247,7 +247,7 @@ const chapitres = [
 {
     numero: 24,
     nom: "Somme de SEV",
-    visible: false,
+    visible: true,
     afficherComplet: true,
     afficherCorrige: false,
     memes: [
