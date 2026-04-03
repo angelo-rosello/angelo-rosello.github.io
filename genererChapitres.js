@@ -241,7 +241,7 @@ const chapitres = [
     nom: "Variables aléatoires discrètes",
     visible: true,
     afficherComplet: true,
-    afficherCorrige: false,
+    afficherCorrige: true,
     memes: []
 },
 {
