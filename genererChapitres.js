@@ -249,7 +249,7 @@ const chapitres = [
     nom: "Somme de SEV",
     visible: true,
     afficherComplet: true,
-    afficherCorrige: false,
+    afficherCorrige: true,
     memes: [
         { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/C6RKwj9Iekr/?utm_source=ig_web_copy_link&igsh=MXZkdzU4anQxcWR4dw==" }
     ]
@@ -258,7 +258,7 @@ const chapitres = [
     numero: 25,
     nom: "Intégrales impropres",
     visible: false,
-    afficherComplet: false,
+    afficherComplet: true,
     afficherCorrige: false,
     memes: [
         { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DBBPnz5IgzR/?utm_source=ig_web_copy_link&igsh=MTk0bmNzcjVjZHdiZQ==" }
@@ -267,7 +267,7 @@ const chapitres = [
 {
     numero: 26,
     nom: "Applications linéaires en dimension finie",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
