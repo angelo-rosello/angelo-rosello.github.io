@@ -257,7 +257,7 @@ const chapitres = [
 {
     numero: 25,
     nom: "Intégrales impropres",
-    visible: false,
+    visible: true,
     afficherComplet: true,
     afficherCorrige: false,
     memes: [
