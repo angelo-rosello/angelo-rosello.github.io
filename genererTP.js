@@ -24,7 +24,8 @@ const tps = [
     { numero: 21, nom : "Représentations graphiques - Partie II", visible: true}, 
     { numero: 22, nom : "Variables aléatoires - Partie III (Variables discrète et loi des grands nombres)", visible: true}, 
     { numero: 23, nom : "Polynôme interpolateur de Lagrange", visible: true},
-    { numero: 24, nom : "Diagrammes en bâton", visible: false},
+    { numero: 24, nom : "Matrices : diagonalisation", visible: true},
+    { numero: 24.5, nom : "Diagrammes en bâton", visible: false},
     { numero: 25, nom : "Révisions aléatoires (planche de Galton)", visible: false},
     { numero: 26, nom : "Diagonalisation (avec corrigé)", visible: false},
     
