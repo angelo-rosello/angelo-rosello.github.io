@@ -259,7 +259,7 @@ const chapitres = [
     nom: "Intégrales impropres",
     visible: true,
     afficherComplet: true,
-    afficherCorrige: false,
+    afficherCorrige: true,
     memes: [
         { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DBBPnz5IgzR/?utm_source=ig_web_copy_link&igsh=MTk0bmNzcjVjZHdiZQ==" }
     ]
@@ -268,7 +268,7 @@ const chapitres = [
     numero: 26,
     nom: "Applications linéaires en dimension finie",
     visible: true,
-    afficherComplet: false,
+    afficherComplet: true,
     afficherCorrige: false,
     memes: []
 },
