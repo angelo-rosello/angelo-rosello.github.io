@@ -275,7 +275,7 @@ const chapitres = [
 {
     numero: 27,
     nom: "Dérivées successives, formules de Taylor",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: [
