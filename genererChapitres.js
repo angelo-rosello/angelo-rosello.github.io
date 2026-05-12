@@ -269,7 +269,7 @@ const chapitres = [
     nom: "Applications linéaires en dimension finie",
     visible: true,
     afficherComplet: true,
-    afficherCorrige: false,
+    afficherCorrige: true,
     memes: []
 },
 {
