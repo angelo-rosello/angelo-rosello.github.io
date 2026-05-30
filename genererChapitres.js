@@ -276,8 +276,8 @@ const chapitres = [
     numero: 27,
     nom: "Dérivées successives, formules de Taylor",
     visible: true,
-    afficherComplet: false,
-    afficherCorrige: false,
+    afficherComplet: true,
+    afficherCorrige: true,
     memes: [
         { label: "Les vraies Swifties", url: "doc-eleves/memes/taylor.png" }
     ]
@@ -285,7 +285,7 @@ const chapitres = [
 {
     numero: 28,
     nom: "Couples de variables aléatoires",
-    visible: false,
+    visible: true,
     afficherComplet: false,
     afficherCorrige: false,
     memes: []
