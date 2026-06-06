@@ -287,14 +287,14 @@ const chapitres = [
     nom: "Couples de variables aléatoires",
     visible: true,
     afficherComplet: true,
-    afficherCorrige: false,
+    afficherCorrige: true,
     memes: []
 },
 {
     numero: 29,
     nom: "Extrema et convexité",
     visible: true,
-    afficherComplet: false,
+    afficherComplet: true,
     afficherCorrige: false,
     memes: []
 },
