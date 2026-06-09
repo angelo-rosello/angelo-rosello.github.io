@@ -301,8 +301,8 @@ const chapitres = [
 {
     numero: 30,
     nom: "Convergences en probabilités",
-    visible: false,
-    afficherComplet: false,
+    visible: true,
+    afficherComplet: true,
     afficherCorrige: false,
     memes: [
         {label: "Bien pratique cette inégalité", url: "https://www.instagram.com/reel/DM3Z1mLAUg-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="},
