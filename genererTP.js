@@ -26,8 +26,8 @@ const tps = [
     { numero: 23, nom : "Polynôme interpolateur de Lagrange", visible: true},
     { numero: 24, nom : "Matrices : diagonalisation", visible: true},
     { numero: 24.5, nom : "Diagrammes en bâton", visible: false},
-    { numero: 25, nom : "Révisions aléatoires (planche de Galton)", visible: false},
-    { numero: 26, nom : "Diagonalisation (avec corrigé)", visible: false},
+    { numero: 25, nom : "Diagrammes en bâton", visible: true},
+    { numero: 26, nom : "Etude de la suite logistique", visible: true},
     
     
     // Ajouter d'autres chapitres ici...
