@@ -37,9 +37,9 @@ const chapitres = [
     {
         numero: 4,
         nom: "Réels, fonctions numériques",
-        visible: true,
-        afficherComplet: true,
-        afficherCorrige: true,
+        visible: false,
+        afficherComplet: false,
+        afficherCorrige: false,
         memes: [
             { label: "Il y a 3 angles à connaître...", url: "https://www.instagram.com/reel/C6bKri4IwAq/?utm_source=ig_web_copy_link&igsh=eWo2NnhyOGk2bXdn" }
         ]
