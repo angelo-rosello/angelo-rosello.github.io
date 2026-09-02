@@ -5,7 +5,7 @@ const chapitres = [
     {
         numero: 1,
         nom: "Logique et raisonnement",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
