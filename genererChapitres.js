@@ -6,7 +6,7 @@ const chapitres = [
         numero: 1,
         nom: "Logique et raisonnement",
         visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Pour clarifier", url: "doc-eleves/memes/rock.png" },
@@ -17,7 +17,7 @@ const chapitres = [
     {
         numero: 2,
         nom: "Somme et produits",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
