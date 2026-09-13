@@ -7,7 +7,7 @@ const chapitres = [
         nom: "Logique et raisonnement",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Pour clarifier", url: "doc-eleves/memes/rock.png" },
             { label: "Base case = Initialisation", url: "https://www.instagram.com/reel/DF9OKmPuTlW/?utm_source=ig_web_copy_link&igsh=MWZ1a3Zlc2x1OXI1dA==" },
