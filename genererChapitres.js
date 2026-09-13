@@ -18,7 +18,7 @@ const chapitres = [
         numero: 2,
         nom: "Somme et produits",
         visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Par pitié", url: "doc-eleves/memes/sum.png" }
