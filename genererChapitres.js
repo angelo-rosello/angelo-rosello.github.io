@@ -27,7 +27,7 @@ const chapitres = [
     {
         numero: 3,
         nom: "Applications",
-       visible: false,
+       visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
