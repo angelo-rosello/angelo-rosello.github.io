@@ -28,7 +28,7 @@ const chapitres = [
         numero: 3,
         nom: "Applications",
        visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Motivational speech", url: "https://www.instagram.com/reel/DHdw7kAyLbJ/?utm_source=ig_web_copy_link&igsh=b3cybWRrN3hvcWhr" }
