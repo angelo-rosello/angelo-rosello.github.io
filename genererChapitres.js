@@ -19,7 +19,7 @@ const chapitres = [
         nom: "Somme et produits",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Par pitié", url: "doc-eleves/memes/sum.png" }
         ]
@@ -29,7 +29,7 @@ const chapitres = [
         nom: "Applications",
        visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Motivational speech", url: "https://www.instagram.com/reel/DHdw7kAyLbJ/?utm_source=ig_web_copy_link&igsh=b3cybWRrN3hvcWhr" }
         ]
@@ -39,7 +39,7 @@ const chapitres = [
         nom: "Réels, fonctions numériques",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Il y a 3 angles à connaître...", url: "https://www.instagram.com/reel/C6bKri4IwAq/?utm_source=ig_web_copy_link&igsh=eWo2NnhyOGk2bXdn" }
         ]
