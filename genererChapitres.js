@@ -13,7 +13,7 @@ const chapitres = [
             { label: "Base case = Initialisation", url: "https://www.instagram.com/reel/DF9OKmPuTlW/?utm_source=ig_web_copy_link&igsh=MWZ1a3Zlc2x1OXI1dA==" },
             { label: "Big brains in the group chat", url: "https://www.instagram.com/reel/DH0nhBUIb0E/?utm_source=ig_web_copy_link&igsh=MW44eTZhM2pjNnVsdw==" }
         ]
-    },
+    }, 
     {
         numero: 2,
         nom: "Somme et produits",
