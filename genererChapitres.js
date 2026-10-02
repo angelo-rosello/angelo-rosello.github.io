@@ -48,7 +48,7 @@ const chapitres = [
         numero: 5,
         nom: "Suites réelles",
         visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DCJg7sjsnIJ/?utm_source=ig_web_copy_link&igsh=NXdma2xmdXMyY3M0" }
@@ -57,7 +57,7 @@ const chapitres = [
     {
         numero: 6,
         nom: "Polynômes",
-       visible: false,
+       visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
