@@ -49,7 +49,7 @@ const chapitres = [
         nom: "Suites réelles",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "Hors sujet mais relatable", url: "https://www.instagram.com/reel/DCJg7sjsnIJ/?utm_source=ig_web_copy_link&igsh=NXdma2xmdXMyY3M0" }
         ]
@@ -58,7 +58,8 @@ const chapitres = [
         numero: 6,
         nom: "Polynômes",
        visible: true,
-        afficherComplet: false,
+        afficherComplet: false
+    ,
         afficherCorrige: false,
         memes: [
             { label: "Dosez", url: "doc-eleves/memes/cuillere.png" },
