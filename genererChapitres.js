@@ -58,8 +58,7 @@ const chapitres = [
         numero: 6,
         nom: "Polynômes",
        visible: true,
-        afficherComplet: false
-    ,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Dosez", url: "doc-eleves/memes/cuillere.png" },
