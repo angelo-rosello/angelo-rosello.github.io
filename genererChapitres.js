@@ -2,7 +2,7 @@
 
 // Tableau des chapitres avec leur numéro, nom, visibilité et option d'affichage du corrigé
 const chapitres = [
-    {
+    { 
         numero: 1,
         nom: "Logique et raisonnement",
         visible: true,
