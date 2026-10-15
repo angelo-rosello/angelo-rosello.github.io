@@ -70,8 +70,8 @@ const chapitres = [
     {
         numero: 7,
         nom: "Limites de suites",
-       visible: false,
-        afficherComplet: false,
+       visible: true,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Bienvenue dans le vrai monde", url: "https://www.instagram.com/reel/DC1RmQyIQgH/?utm_source=ig_web_copy_link&igsh=aGdvb21keDk3N2Fo" },
