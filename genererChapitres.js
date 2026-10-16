@@ -82,8 +82,8 @@ const chapitres = [
     {
         numero: 8,
         nom: "Dénombrement",
-        visible: false,
-        afficherComplet: false,
+        visible: true,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "LVB español", url: "doc-eleves/memes/espanol.png" }
@@ -92,8 +92,8 @@ const chapitres = [
     {
         numero: 9,
         nom: "Limites de fonctions",
-        visible: true,
-        afficherComplet: true,
+        visible: false,
+        afficherComplet: false,
         afficherCorrige: false,
         memes: [
             { label: "Name a better duo", url: "https://www.instagram.com/reel/C_K0l97o7MK/?utm_source=ig_web_copy_link&igsh=MXBpdjd3cDdkZHl3bw==" },
