@@ -92,7 +92,7 @@ const chapitres = [
     {
         numero: 9,
         nom: "Limites de fonctions",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
