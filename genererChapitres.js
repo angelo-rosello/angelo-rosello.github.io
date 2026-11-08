@@ -93,7 +93,7 @@ const chapitres = [
         numero: 9,
         nom: "Limites de fonctions",
         visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: [
             { label: "Name a better duo", url: "https://www.instagram.com/reel/C_K0l97o7MK/?utm_source=ig_web_copy_link&igsh=MXBpdjd3cDdkZHl3bw==" },
@@ -104,7 +104,7 @@ const chapitres = [
     {
         numero: 10,
         nom: "Continuité",
-       visible: false,
+       visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
