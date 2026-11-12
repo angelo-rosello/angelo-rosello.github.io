@@ -84,7 +84,7 @@ const chapitres = [
         nom: "Dénombrement",
         visible: true,
         afficherComplet: true,
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "LVB español", url: "doc-eleves/memes/espanol.png" }
         ]
@@ -105,7 +105,7 @@ const chapitres = [
         numero: 10,
         nom: "Continuité",
        visible: true,
-        afficherComplet: false, 
+        afficherComplet: true, 
         afficherCorrige: false,
         memes: [
             { label: "L'essence du TVI", url: "doc-eleves/memes/tvi.png" }
