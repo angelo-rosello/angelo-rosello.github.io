@@ -113,7 +113,7 @@ const chapitres = [
     },
     {
         numero: 11,
-        nom: "Espaces probabilisés finis",
+        nom: "Espaces probabilisés finis", 
        visible: true,
         afficherComplet: true,
         afficherCorrige: true,
