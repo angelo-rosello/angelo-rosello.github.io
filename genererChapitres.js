@@ -106,7 +106,7 @@ const chapitres = [
         nom: "Continuité",
        visible: true,
         afficherComplet: true, 
-        afficherCorrige: true,
+        afficherCorrige: true, 
         memes: [
             { label: "L'essence du TVI", url: "doc-eleves/memes/tvi.png" }
         ]
