@@ -106,7 +106,7 @@ const chapitres = [
         nom: "Continuité",
        visible: true,
         afficherComplet: true, 
-        afficherCorrige: false,
+        afficherCorrige: true,
         memes: [
             { label: "L'essence du TVI", url: "doc-eleves/memes/tvi.png" }
         ]
@@ -115,8 +115,8 @@ const chapitres = [
         numero: 11,
         nom: "Espaces probabilisés finis",
        visible: true,
-        afficherComplet: false,
-        afficherCorrige: false,
+        afficherComplet: true,
+        afficherCorrige: true,
         memes: [
             { label: "Enfin une application concrète (P(A|B) est une proba conditionnelle) ", url: "doc-eleves/memes/bayes.png" }
         ]
@@ -124,7 +124,7 @@ const chapitres = [
     {
         numero: 12,
         nom: "Systèmes linéaires",
-       visible: false,
+       visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: []
