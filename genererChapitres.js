@@ -125,14 +125,14 @@ const chapitres = [
         numero: 12,
         nom: "Systèmes linéaires",
        visible: true,
-        afficherComplet: false,
+        afficherComplet: true,
         afficherCorrige: false,
         memes: []
     },
     {
         numero: 13,
         nom: "Dérivation",
-        visible: false,
+        visible: true,
         afficherComplet: false,
         afficherCorrige: false,
         memes: [
